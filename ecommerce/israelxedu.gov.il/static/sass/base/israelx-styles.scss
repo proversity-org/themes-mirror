@@ -1,0 +1,78 @@
+.navbar-brand {
+  cursor: default;
+  border: none;
+  &:hover {
+    opacity: initial;
+  }
+  .navbar-brand-logo {
+    width: 145.5px;
+    height: 60px;
+  }
+}
+
+a:hover, .link:hover, .btn-link:hover, a:active, .link:active, .btn-link:active, a:focus, .link:focus, .btn-link:focus {
+  opacity: 0.8;
+}
+
+.footer-main{
+  a{
+    border-bottom: none;
+  }
+  a:hover, .link:hover, .btn-link:hover, a:active, .link:active, .btn-link:active, a:focus, .link:focus, .btn-link:focus {
+    border-bottom: none;
+  }
+}
+
+body{
+  background-color: white;
+}
+
+.footer-main {
+  padding: 2em 0;
+  border-top: 3px solid #f7f7f7;
+
+  .logo {
+    margin-bottom: 1em;
+  }
+
+  .footer-logo {
+    padding-left: 1.85em;
+    img {
+      margin-bottom: 1.5rem;
+      max-width: 90%;
+      height: 60px;
+    }
+  }
+  .openedx-logo{
+    text-align: center;
+    img {
+      max-width: 70%;
+      margin-left: 40px;
+    }
+  }
+
+  ul {
+    list-style: none;
+    margin-left: 1.5em;
+
+    li {
+      color: #6b6969;
+      padding: .3em 0;
+
+      a {
+        font-size: 1em;
+        color: #6b6969;
+      }
+      a:hover {
+        color: #6b6969;
+        text-decoration: none;
+      }
+    }
+    li:first-child {
+      font-weight: bold;
+    }
+    li:last-child {
+      margin-bottom: 2em;
+    }
+  }
+}

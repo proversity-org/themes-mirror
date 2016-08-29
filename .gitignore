@@ -1,0 +1,6 @@
+.idea/
+
+edx-platform/**/cms/**/css/*.css
+edx-platform/**/lms/**/css/*.css
+edx-platform/**/cms/**/css/discussion/*.css
+edx-platform/**/lms/**/css/discussion/*.css

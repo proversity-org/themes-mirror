@@ -1,0 +1,8 @@
+@import 'ecommerce/static/sass/partials/components/footer';
+
+// Footer overrides for Israelx Theme
+
+/* Set the fixed height of the footer here */
+footer.footer {
+  border-top: $navbar-border-bottom-width solid $brand-color;
+}

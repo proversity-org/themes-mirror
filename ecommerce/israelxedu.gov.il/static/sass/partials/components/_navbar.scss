@@ -1,0 +1,27 @@
+@import 'ecommerce/static/sass/partials/components/navbar';
+
+// navbar overrides for Israelx theme
+
+.navbar {
+  border-bottom: $navbar-border-bottom-width solid $brand-color;
+    // Vertically center the logo
+  .navbar-brand {
+    .navbar-brand-app {
+      color: black;
+    }
+  }
+}
+
+.administration-navbar {
+  div a {
+    color: $brand-color;
+
+    &.selected,
+    &:active,
+    &:focus,
+    &:hover {
+      border-bottom: 4px solid $brand-color;
+      color: black;
+    }
+  }
+}

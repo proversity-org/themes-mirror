@@ -1,0 +1,69 @@
+{# Base template for edX-specific pages. #}
+
+{% load compress %}
+{% load core_extras %}
+{% load i18n %}
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <link rel="shortcut icon" type="image/png" href="{% static 'images/favicon.ico' %}"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock title %}</title>
+
+    {% compress css %}
+        {% if main_css %}
+            <link rel="stylesheet" href="{{ main_css }}" type="text/x-scss">
+        {% else %}
+            <link rel="stylesheet" href="{% static 'css/base/main.css' %}" type="text/x-scss">
+        {% endif %}
+    {% endcompress %}
+
+    {% compress css %}
+        {# This block is separated to better support browser caching. #}
+        {% block stylesheets %}
+        {% endblock %}
+    {% endcompress %}
+</head>
+<body>
+{% block navbar %}
+    {% include 'edx/partials/_staff_navbar.html' %}
+{% endblock navbar %}
+
+{% block content %}
+{% endblock content %}
+
+{% block footer %}
+{% endblock footer %}
+
+{% include "edx/footer.html" %}
+
+{# Translation support for JavaScript strings. #}
+<script type="text/javascript" src="{% url 'django.views.i18n.javascript_catalog' %}"></script>
+
+<script type="text/javascript">
+    var initModelData = {{ analytics_data|safe }};
+</script>
+
+{% compress js %}
+    <script src="{% static 'bower_components/requirejs/require.js' %}"></script>
+    <script src="{% static 'js/config.js' %}"></script>
+
+    {# Note: django-compressor does not recognize the data-main attribute. Load the main script separately. #}
+    <script src="{% static 'js/common.js' %}"></script>
+{% endcompress %}
+
+{% compress js %}
+    {# Note: This block is purposely separated from the one above so that browsers cache the common JS instead of
+    downloading a single, large file for each page. #}
+    {% block javascript %}
+    {% endblock javascript %}
+{% endcompress %}
+
+{# Google Tag Manager and Google Analytics codes #}
+{% include "analytics-codes.html" %}
+
+</body>
+</html>
