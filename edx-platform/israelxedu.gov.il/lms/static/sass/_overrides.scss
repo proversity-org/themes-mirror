@@ -41,6 +41,9 @@ a{
     box-shadow: none;
   }
 }
+.window-wrap{
+  background-color: transparent;
+}
 .content-wrapper{
   max-width: none;
   padding-top: 0;
@@ -331,6 +334,10 @@ header.header-main {
       display: none;
       &.show-menu{
         display: block;
+      }
+
+      li.primary label {
+        display: inline;
       }
 
       .language-selection {
