@@ -237,16 +237,16 @@ from openedx.core.djangolib.markup import Text, HTML
             <span>${course_details.title or course.display_name}</span>
           </div>
           <div class="col col-12 sm-col-12 md-col-3 course-run">
-            Start Date:
+            ${_("Start Date")}:
             <span>${course_details.start_date.strftime('%b %-d, %Y')}</span>
           </div>
           <div class="col col-12 sm-col-12 md-col-3 course-run">
-            Duration:
+            ${_("Duration")}:
             <span>${course_details.duration}</span>
           </div>
 
           <div class="col col-12 sm-col-12 md-col-2">
-            Price:
+            ${_("Price")}:
             <span>${course_price}</span>
           </div>
           <%
@@ -355,12 +355,12 @@ from openedx.core.djangolib.markup import Text, HTML
         <div class="row">
           <div class="col col-12 sm-col-12 md-col-8">
 
-            <h2> Course Description</h2>
+            <h2> ${_("Course Description")}</h2>
             <div class="course-description">
               <p>${course_details.description}</p>
             </div>
 
-            <h2> What you'll learn</h2>
+            <h2> ${_("What you'll learn")}</h2>
             <div class="course-learning">
               <ul class="list-bulleted">
                 % for item in course_details.learning_info:
@@ -393,7 +393,7 @@ from openedx.core.djangolib.markup import Text, HTML
           </div>
           % endif
         </div>
-        <div class="col col-12"><h2>Instructors</h2></div>
+        <div class="col col-12"><h2>${_("Instructors")}</h2></div>
         <% index = 0 %>
         % for instructors in izip_longest(*([iter(course_details.instructor_info['instructors'])] * 2)):
         <div class="row instructors">
