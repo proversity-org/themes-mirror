@@ -249,101 +249,8 @@ from openedx.core.djangolib.markup import Text, HTML
             ${_("Price")}:
             <span>${course_price}</span>
           </div>
-          <%
-            btn_text = 'Enroll Now'
-            btn_href = '#'
-            btn_class = ''
-            btn_class_bulk = ''
-            btn_id = ''
-          %>
-
-          % if user.is_authenticated() and registered:
-            <%
-              btn_text = "You are enrolled in this course"
-              btn_class = "disabled"
-            %>
-
-          % elif in_cart:
-            <%
-              btn_text = "This course is in your cart"
-              btn_href = cart_link
-            %>
-
-          % elif is_course_full:
-            <%
-              btn_text = "Course is full"
-              btn_class = "disabled"
-              btn_class_bulk = btn_class
-            %>
-
-          % elif invitation_only and not can_enroll:
-            <%
-              btn_text = "Enrollment in this course is by invitation only"
-              btn_class = "disabled"
-              btn_class_bulk = btn_class
-            %>
-
-          % elif not is_shib_course and not can_enroll:
-            <%
-              btn_text = "Enrollment is Closed"
-              btn_class = "disabled"
-              btn_class_bulk = btn_class
-            %>
-
-          % elif can_add_course_to_cart:
-            <%
-              btn_class = "add-to-cart"
-              btn_text = "Enroll Now"
-            %>
-
-            % if user.is_authenticated():
-              % if user.is_active:
-                <%
-                  btn_href = "#"
-                  btn_id = "add_to_cart_post"
-                %>
-              % else:
-                <%
-                  btn_text = "Please Activate Your Account"
-                  btn_class = "disabled"
-                %>
-              % endif
-            % else:
-              <%
-                btn_href = reg_then_add_to_cart_link
-                btn_id = "reg_then_add_to_cart"
-              %>
-            % endif
-
-            % if ecommerce_checkout and ecommerce_checkout_link and user.is_authenticated():
-                <%
-                  btn_href = ecommerce_checkout_link
-                %>
-            % endif
-
-          % else:
-            % if ecommerce_checkout:
-              % if ecommerce_checkout_link:
-                <% btn_href = ecommerce_checkout_link %>
-              % else:
-                <% btn_href="#" %>
-              % endif
-              % if professional_mode:
-                % if user.is_authenticated():
-                  <% btn_class = "add-to-cart" %>
-                % else:
-                  <%
-                    btn_class = "register"
-                    btn_class_bulk = btn_class
-                  %>
-                % endif
-              % endif
-            % endif
-          % endif
           <div class="col col-12 sm-col-12 md-col-4">
-            <a href="${btn_href}" id="${btn_id}" class="btn-block btn-success btn-large btn-enroll ${btn_class}">
-              ${_(btn_text)}
-            </a>
+            <%include file="_enroll_button.html" />
           </div>
         </div>
       </div>
@@ -369,29 +276,7 @@ from openedx.core.djangolib.markup import Text, HTML
               </ul>
             </div>
           </div>
-          % if can_enroll and not is_course_full:
-          <div class="col col-12 sm-col-12 md-col-4 pull-right extras">
-            <div class="course-features group-purchase">
-              <h2>${_("Want to purchase this course for a group?")} </h2>
-              <p>${_("You can purchase enrollment codes for this course to distribute to your team")}</p>
-              % if ecommerce_bulk_checkout_link:
-              <a href="${ecommerce_bulk_checkout_link}" id="ecommerce_bulk_checkout_button" class="btn-block btn-success btn-large btn-enroll ${btn_class_bulk}">${_("Purchase for a Group")}</a>
-              % if static.get_value('BULK_DISCOUNT_EMAIL') and static.get_value('BULK_DISCOUNT_NUMBER'):
-                  <p>
-                    ${Text(_("Bulk discounts may apply for groups larger than {number}. Contact {link_start}{email}{link_end} for more information.")).format(
-                      link_start=HTML('<a href="mailto:' + static.get_value('BULK_DISCOUNT_EMAIL') + '?Subject=' + course_details.course_id + '%20' + course_details.run + '%20Bulk%20Discount">'),
-                      link_end=HTML('</a>'),
-                      number=static.get_value('BULK_DISCOUNT_NUMBER'),
-                      email=static.get_value('BULK_DISCOUNT_EMAIL'),
-                    )}
-                  </p>
-              % endif
-              % else:
-              <a href="mailto:mitprofessionalx@mit.edu?Subject=${course_details.course_id}%20${course_details.run}%20Group%20Purchase" class="btn-block btn-success btn-large btn-enroll">${_("Email Us")}</a>
-              % endif
-            </div>
-          </div>
-          % endif
+          <%include file="_bulk_purchase_button.html" />
         </div>
         <div class="col col-12"><h2>${_("Instructors")}</h2></div>
         <% index = 0 %>
@@ -449,9 +334,7 @@ from openedx.core.djangolib.markup import Text, HTML
     <div class="grid-manual">
         <div class="row">
             <div class="col col-12 sm-col-12 md-col-4 text-center btn-enroll-mobile">
-                <a href="${btn_href}" id="${btn_id}" class="btn-block btn-success btn-large btn-enroll ${btn_class}">
-                  ${_(btn_text)}
-                </a>
+              <%include file="_enroll_button.html" />
            </div>
         </div>
     </div>

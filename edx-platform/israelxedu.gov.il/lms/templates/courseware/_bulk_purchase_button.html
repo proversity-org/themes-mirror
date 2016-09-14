@@ -1,0 +1,35 @@
+## mako
+<%namespace name='static' file='../static_content.html'/>
+<%!
+from django.utils.translation import ugettext as _
+from openedx.core.djangolib.markup import Text, HTML
+%>
+
+% if user.is_authenticated():
+  <% btn_class = "" %>
+% else:
+  <% btn_class = "register" %>
+% endif
+% if professional_mode and can_enroll and not is_course_full:
+  <div class="col col-12 sm-col-12 md-col-4 pull-right extras">
+    <div class="course-features group-purchase">
+      <h2>${_("Want to purchase this course for a group?")}</h2>
+      <p>${_("You can purchase enrollment codes for this course to distribute to your team")}</p>
+      % if ecommerce_bulk_checkout_link:
+        <a href="${ecommerce_bulk_checkout_link}" id="ecommerce_bulk_checkout_button" class="btn-block btn-success btn-large btn-enroll ${btn_class}">${_("Purchase for a Group")}</a>
+        % if static.get_value('BULK_DISCOUNT_EMAIL') and static.get_value('BULK_DISCOUNT_NUMBER'):
+          <p>
+            ${Text(_("Bulk discounts may apply for groups larger than {number}. Contact {link_start}{email}{link_end} for more information.")).format(
+              link_start=HTML('<a href="mailto:' + static.get_value('BULK_DISCOUNT_EMAIL') + '?Subject=' + course_details.course_id + '%20' + course_details.run + '%20Bulk%20Discount">'),
+              link_end=HTML('</a>'),
+              number=static.get_value('BULK_DISCOUNT_NUMBER'),
+              email=static.get_value('BULK_DISCOUNT_EMAIL'),
+            )}
+          </p>
+        % endif
+      % else:
+        <a href="mailto:israelx-support@edx.org?Subject=${course_details.course_id}%20${course_details.run}%20Group%20Purchase" class="btn-block btn-success btn-large btn-enroll">${_("Email Us")}</a>
+      % endif
+    </div>
+  </div>
+% endif
