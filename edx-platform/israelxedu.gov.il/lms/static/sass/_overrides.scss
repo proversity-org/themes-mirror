@@ -15,6 +15,9 @@ body{
 .pull-right{
   float: right !important;
 }
+.block{
+  display: block;
+}
 img{
   max-width: 100%;
 }
@@ -55,7 +58,7 @@ a{
 .grid-container{
   padding: 0 1rem;
 }
-.show{
+.show-user-menu{
   display: block !important;
 }
 
@@ -488,54 +491,69 @@ header.header-main {
   .tint-dark {
     min-height: 22em;
     max-height: 350px;
+    background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a6000000', endColorstr='#00000000', GradientType=1); /* IE6-9 */
     .grid-manual {
       position: relative;
       .text-tint {
         position: absolute;
         top: 0;
         bottom: 0;
+        height: 352px;
+        display: flex;
+        align-items: center;
         p {
           padding: 1em 0 0 0;
           font-size: 1.5rem;
           color: $white;
           line-height: 1.5em;
-          &.v-align{
-            display: flex;
-            align-items: center;
-            height: 352px;
-            padding: 0;
+          span {
+            display: block;
+            font-size: 1rem;
+          }
+          .btn-neutral {
+            border-color: $white;
+            padding: 0.8em 2em;
+            color: $white;
+            margin-left: 2px;
+            font-weight: normal;
+            background-color: transparent;
+            i.fa {
+              font-size: 0.6em;
+              margin-left: 1.5em;
+              vertical-align: middle;
+              margin-top: 1px;
+            }
+            &:hover{
+              text-decoration: none;
+            }
           }
         }
-        .btn-neutral {
-          border-color: $white;
-          padding: 0.8em 2em;
-          color: $white;
-          margin-left: 2px;
-          font-weight: normal;
-          background-color: transparent;
-          i.fa {
-            font-size: 0.6em;
-            margin-left: 1.5em;
-            vertical-align: middle;
-            margin-top: 1px;
-          }
+        &.small{
+          height: 250px;
         }
       }
+    }
+    &.no-background-mobile{
+      background: none;
     }
   }
   &.hero-main{
     background: url("../images/hero-home-page.jpg") no-repeat top center !important;
     background-size: cover !important;
-    .tint-dark {
-      background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%); /* FF3.6-15 */
-      background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%); /* Chrome10-25,Safari5.1-6 */
-      background: linear-gradient(to right, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a6000000', endColorstr='#00000000', GradientType=1); /* IE6-9 */
-    }
   }
-  &.hero-about{
-    background: url("../images/hero-about-us.jpg") no-repeat top center !important;
+  &.hero-catalog{
+    background: url("../images/hero-course-catalog.jpg") no-repeat top center !important;
     background-size: cover !important;
+    .tint-dark {
+      .grid-manual {
+        .text-tint{
+          height: 250px;
+        }
+      }
+    }
   }
   &.hero-video{
     background: none;
@@ -1017,6 +1035,12 @@ header.header-main {
     line-height: 1.6rem;
     text-transform: uppercase;
   }
+  h3{
+    font-size: 1rem;
+    color: $black;
+    line-height: 1.6rem;
+    text-transform: uppercase;
+  }
   .brand-link{
     display: block;
     margin: 2rem 0;
@@ -1033,6 +1057,11 @@ header.header-main {
   }
   .mission-statement{
     margin-top: 1rem;
+    img {
+      border-radius: 50%;
+      border: 6px solid #D3D3D3;
+      width: 120px;
+    }
     p{
       font-size: 1.05rem;
     }
@@ -1047,7 +1076,7 @@ header.header-main {
   }
   hr{
     border-top: 3px solid $course-section-background-color;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
   }
   .edx-intro{
     p{
@@ -1075,6 +1104,7 @@ header.header-main {
     margin-bottom: 2rem !important;
     .brand-link{
       display: inline;
+      line-height: 1.4rem;
     }
   }
   .response {
@@ -1095,6 +1125,9 @@ header.header-main {
     .brand-link{
       display: inline;
     }
+  }
+  .document-end{
+    font-style: italic;
   }
 }
 
@@ -1336,6 +1369,10 @@ header.header-main {
         .text-tint {
           p {
             font-size: 40px;
+            span {
+              display: block;
+              font-size: 1.5rem;
+            }
           }
         }
       }
