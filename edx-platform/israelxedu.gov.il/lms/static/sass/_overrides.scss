@@ -195,6 +195,7 @@ h1, h2, h3, h4, h5, h6{
     margin-bottom: 0.2rem !important;
     padding-left: 0.5rem !important;
     line-height: 1.5rem;
+    color: #6b6969;
     .brand-link{
       display: inline;
     }
@@ -1128,6 +1129,17 @@ header.header-main {
   }
   .document-end{
     font-style: italic;
+  }
+  .list-ordered{
+    .item{
+      color: #6b6969;
+      line-height: 1.5rem;
+    }
+  }
+  .instructions{
+    span{
+      display: block;
+    }
   }
 }
 
