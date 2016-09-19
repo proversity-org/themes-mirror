@@ -21,46 +21,53 @@ from django.conf import settings
         <div class="col col-12 sm-col-10 md-col-8 lg-col-6 xl-col-6 col-centered">
           <form id="contact_form" class="form-block">
             <div class="input-group">
-              <label for="">Email*</label>
+              <label for="">${_("Email")}*</label>
               <input type="text" class="input-lg" id="email">
             </div>
             <div class="input-group">
-              <label for="">Full Name*</label>
+              <label for="">${_("Full Name")}*</label>
               <input type="text" class="input-lg" id="name">
             </div>
             <div class="input-group">
-              <label for="">I am a</label>
+              <label for="">${_("I am a")}</label>
               <div class="custom-select">
                 <select name="user_type" id="user_type" class="input-lg">
-                  <option value="">Select</option>
-                  <option value="learner">Learner</option>
-                  <option value="teacher">Teacher</option>
-                  <option value="other">Other</option>
+                  <option value="">
+                      ## Translators: It is texts for user type selection
+                      ${_("Select")}
+                  </option>
+                  <option value="learner">${_("Learner")}</option>
+                  <option value="teacher">${_("Teacher")}</option>
+                  <option value="other">
+                      ## Translators: text indicating the user type other than teacher and learner
+                      ${_("Other")}
+                  </option>
                 </select>
               </div>
             </div>
             <div class="input-group">
-              <label for="">Inquiry Type*</label>
+              <label for="">${_("Inquiry Type")}*</label>
               <div class="custom-select">
                 <select id="subject" class="input-lg">
-                  <option value="">Select</option>
-                  <option value="payments">Payments</option>
-                  <option value="certificates">Certificates</option>
-                  <option value="assessments">Assessments</option>
-                  <option value="videos">Videos</option>
-                  <option value="discussion-forums">Discussion Forums</option>
-                  <option value="mobile-application">Mobile Application</option>
+                  <option value="">${_("Select")}</option>
+                  <option value="payments">${_("Payments")}</option>
+                  <option value="certificates">${_("Certificates")}</option>
+                  <option value="assessments">${_("Assessments")}</option>
+                  <option value="videos">${_("Videos")}</option>
+                  <option value="discussion-forums">${_("Discussion Forums")}</option>
+                  <option value="mobile-application">${_("Mobile Application")}</option>
                 </select>
               </div>
             </div>
             <div class="input-group">
-              <label for="">Message*</label>
+              ## Translators: text is used here as a label for message
+              <label for="">${_("Message")}*</label>
               <textarea id="details" rows="10"></textarea>
             </div>
             <input type="text" name="issue_type" id="issue_type" value="contact" class="hidden">
-            <button class="btn-brand btn-client btn-lg" id="submit_btn">Submit</button>
+            <button class="btn-brand btn-client btn-lg" id="submit_btn">${_("Submit")}</button>
             <div class="input-group">
-              <label for="" class="text-light">* Required Fields</label>
+              <label for="" class="text-light">* ${_("Required Fields")}</label>
             </div>
           </form>
         </div>
@@ -83,7 +90,7 @@ from django.conf import settings
               ${_("Thank you for your inquiry")}
           </h3>
           <p class="alert-copy-with-title">
-              We'll get back to you within 24 hours.
+              ${_("We'll get back to you within 24 hours.")}
           </p>
         </div>
     </div>
