@@ -545,6 +545,10 @@ header.header-main {
     background: url("../images/hero-home-page.jpg") no-repeat top center !important;
     background-size: cover !important;
   }
+  &.hero-about{
+    background: url("../images/hero-about-us.jpg") no-repeat top center !important;
+    background-size: cover !important;
+  }
   &.hero-catalog{
     background: url("../images/hero-course-catalog.jpg") no-repeat top center !important;
     background-size: cover !important;
