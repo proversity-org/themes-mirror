@@ -1257,6 +1257,10 @@ header.header-main {
 .discussion {
   #content {
     padding-bottom: 60px;
+    max-width: 1180px;
+    .container{
+      border:1px solid #d9d9d9;
+    }
   }
 }
 
