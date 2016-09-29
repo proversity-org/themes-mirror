@@ -470,7 +470,7 @@ header.header-main {
             content: "\f0d8";
             position: absolute;
             font-family: 'FontAwesome';
-            right: 1rem;
+            right: calc(50% - 9px);
             top: -20px;
             color: $white;
             font-size: 2rem;
@@ -1521,5 +1521,23 @@ header.header-main {
     .footer-logo {
       text-align: left;
     }
+  }
+}
+
+
+.rtl {
+  header{
+    &.header-main{
+      .list-inline li{
+        float: left;
+      }
+      .navbar-collapse .collapsed-button{
+        left: 20px;
+        right: auto;
+      }
+    }
+  }
+  .footer-main ul li:last-child{
+    text-align: right;
   }
 }

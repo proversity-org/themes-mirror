@@ -1,7 +1,7 @@
 ## mako
 <%namespace name='static' file='static_content.html'/>
 
-<link rel="stylesheet" type="text/css" href="${static.url('css/lms-main-v2.css')}"/>
+<%static:css group='style-main-v2'/>
 
 <!-- Hack to prevent font awesome icons from being overridden -->
 <script>
