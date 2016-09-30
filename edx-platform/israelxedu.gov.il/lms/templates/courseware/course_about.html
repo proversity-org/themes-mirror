@@ -201,8 +201,10 @@ from openedx.core.djangolib.markup import Text, HTML
 
 <%block name="pagetitle">${course.display_name_with_default_escaped}</%block>
 
+<% video_class = "" if course_details.intro_video and course_details.video_thumbnail_image_name else "no-video" %>
+
 <section class="course-info" xmlns="http://www.w3.org/1999/html">
-  <header class="hero hero-video grid-manual">
+  <header class="hero hero-video grid-manual ${video_class}">
     <div class="hero-image" style="background: url('${static.url(course_details.banner_image_asset_path)}') no-repeat center right;">
       <div class="tint-dark"></div>
     </div>
