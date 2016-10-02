@@ -9,11 +9,18 @@ from django.utils.translation import ugettext as _
   btn_class = "register"
 %>
 % if user.is_authenticated() and registered:
-  <%
-    btn_text = _("Go to Course")
-    btn_href = course_target
-    btn_class = ""
- %>
+  % if show_courseware_link:
+    <%
+      btn_text = _("Go to Course")
+      btn_href = course_target
+      btn_class = ""
+    %>
+  % else:
+    <%
+      btn_text = _("You are enrolled in this course")
+      btn_class = "disabled"
+    %>
+  % endif
 % elif is_course_full:
   <%
     btn_text = _("Course is full")
