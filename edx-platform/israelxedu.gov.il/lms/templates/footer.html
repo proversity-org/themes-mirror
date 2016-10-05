@@ -12,57 +12,37 @@ from django.utils.translation import ugettext as _
           <li><a href="/"><img src="${static.url('images/logo.png')}" alt="Logo" /></a></li>
       </ul>
     </div>
-    <div class="col col-12 sm-col-12 md-col-4">
-      <div class="col col-6">
-      <ul>
-        <li>
-            ## Translators: This message is used as a label for a list of links that navigate to about pages on the website.
-            ${_("About")}
-        </li>
-        <li><a href="/about">${_("About this Site")}</a></li>
-        <li><a href="/faq">${_("FAQ")}</a></li>
-        <li><a href="/contact">${_("Contact Us")}</a></li>
-      </ul>
-    </div>
-
-    <div class="col col-6">
-      <ul>
-        <li>
-            ## Translators: This message is used as a label for a list of links that navigate to support pages on the website.
-            ${_("Support")}
-        </li>
-        <li><a href="/tos">${_("Terms of Service")}</a></li>
-        <li><a href="/privacy">${_("Privacy Policy")}</a></li>
-        <li><a href="/honor">${_("Honor Code")}</a></li>
-      </ul>
-    </div>
-    </div>
-    <div class="col col-12 sm-col-12 md-col-4">
-      <div class="col col-6">
-      <ul>
-        <li>
-            ## Translators: This message is used as a label for a list of links that navigate to connect pages on the website.
-            ${_("Connect")}
-        </li>
-        <li><a href="">${_("Facebook")}</a></li>
-        <li><a href="">${_("Twitter")}</a></li>
-        <li><a href="">${_("LinkedIn")}</a></li>
-        <li><a href="">${_("YouTube")}</a></li>
-      </ul>
-    </div>
-
-    <div class="col col-6 open-edx-logo">
-      <ul>
-        <li>
-          <a href="https://open.edx.org">
-            <img src="${static.url('images/openedx-logo-tag.png')}" alt="openedx-logo" />
-          </a>
-        </li>
-      </ul>
-    </div>
-    </div>
-
-
+      <div class="col col-12 sm-col-12 md-col-8">
+        <div class="col col-4">
+          <ul>
+            <li>
+                ## Translators: This message is used as a label for a list of links that navigate to about pages on the website.
+                ${_("About")}
+            </li>
+            <li><a href="/about">${_("About this Site")}</a></li>
+            <li><a href="/contact">${_("Contact Us")}</a></li>
+          </ul>
+        </div>
+        <div class="col col-4">
+          <ul>
+            <li>
+                ## Translators: This message is used as a label for a list of links that navigate to support pages on the website.
+                ${_("Support")}
+            </li>
+            <li><a href="/tos">${_("Terms of Service")}</a></li>
+            <li><a href="/privacy">${_("Privacy Policy")}</a></li>
+          </ul>
+        </div>
+        <div class="col col-4 open-edx-logo">
+        <ul>
+          <li>
+            <a href="https://open.edx.org">
+              <img src="${static.url('images/openedx-logo-tag.png')}" alt="openedx-logo" />
+            </a>
+          </li>
+        </ul>
+      </div>
+      </div>
   </div>
 </div>
 </section>

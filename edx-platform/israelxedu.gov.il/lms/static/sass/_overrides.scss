@@ -195,7 +195,7 @@ h1, h2, h3, h4, h5, h6{
     margin-bottom: 0.2rem !important;
     padding-left: 0.5rem !important;
     line-height: 1.5rem;
-    color: #6b6969;
+    color: $dark;
     .brand-link{
       display: inline;
     }
@@ -470,7 +470,7 @@ header.header-main {
             content: "\f0d8";
             position: absolute;
             font-family: 'FontAwesome';
-            right: 1rem;
+            right: calc(50% - 9px);
             top: -20px;
             color: $white;
             font-size: 2rem;
@@ -545,6 +545,10 @@ header.header-main {
     background: url("../images/hero-home-page.jpg") no-repeat top center !important;
     background-size: cover !important;
   }
+  &.hero-about{
+    background: url("../images/hero-about-us.jpg") no-repeat top center !important;
+    background-size: cover !important;
+  }
   &.hero-catalog{
     background: url("../images/hero-course-catalog.jpg") no-repeat top center !important;
     background-size: cover !important;
@@ -570,6 +574,7 @@ header.header-main {
     }
 
     .grid-container{
+      padding: 0;
       .row{
         height: auto;
         .description{
@@ -597,6 +602,7 @@ header.header-main {
         }
         .video{
           float: none;
+          padding: 0;
           .video-data{
             position: relative;
             text-align: center;
@@ -617,6 +623,22 @@ header.header-main {
               z-index: 1;
             }
           }
+        }
+      }
+    }
+    &.no-video{
+      .hero-image{
+        display: block;
+      }
+      .grid-container .row .description .data{
+        margin: 15% 0 0 0;
+        h1{
+          color: $white;
+          text-shadow: 0 1px 3px $black;
+        }
+        p{
+          color: $white;
+          text-shadow: 0 1px 3px $black;
         }
       }
     }
@@ -1002,7 +1024,7 @@ header.header-main {
 
 .page-heading{
   height: 110px;
-  background: url("../images/page-heading.jpg") center center no-repeat;
+  background: url("../images/hero-course-catalog.jpg") center center no-repeat;
   background-size: cover;
   display: table;
   width: 100%;
@@ -1253,6 +1275,10 @@ header.header-main {
 .discussion {
   #content {
     padding-bottom: 60px;
+    max-width: 1180px;
+    .container{
+      border:1px solid #d9d9d9;
+    }
   }
 }
 
@@ -1402,6 +1428,7 @@ header.header-main {
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a6000000', endColorstr='#00000000', GradientType=1); /* IE6-9 */
       }
       .grid-container{
+        padding: 0 1rem;
         .row{
           height: 22rem;
           .description{
@@ -1419,6 +1446,8 @@ header.header-main {
           }
           .video{
             float: right;
+            padding-left: 1.04167%;
+            padding-right: 1.04167%;
             .video-data{
               line-height: 352px;
               max-width: 95%;
@@ -1429,6 +1458,9 @@ header.header-main {
             }
           }
         }
+      }
+      &.no-video .grid-container .row .description .data{
+        margin: 7% 0 0 0;
       }
     }
   }
@@ -1513,5 +1545,26 @@ header.header-main {
     .footer-logo {
       text-align: left;
     }
+  }
+}
+
+
+.rtl {
+  header{
+    &.header-main{
+      .list-inline li{
+        float: left;
+      }
+      .navbar-collapse .collapsed-button{
+        left: 20px;
+        right: auto;
+      }
+    }
+  }
+  .footer-main ul li:last-child{
+    text-align: right;
+  }
+  .static-content h1{
+    text-align: right;
   }
 }
