@@ -39,6 +39,7 @@ body{
 
   .footer-logo {
     padding-left: 1.85em;
+    text-align: left;
     img {
       margin-bottom: 1.5rem;
       max-width: 90%;
@@ -76,5 +77,10 @@ body{
     li:last-child {
       margin-bottom: 2em;
     }
+  }
+}
+@media screen and (max-width: 64em){
+  .footer-main .footer-logo {
+    text-align: center;
   }
 }
