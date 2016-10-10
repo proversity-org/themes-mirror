@@ -1,0 +1,465 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2016-09-01 10:46+0500\n"
+"PO-Revision-Date: 2016-09-01 10:48+0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: en\n"
+
+msgid "Academic Planning"
+msgstr ""
+
+msgid "Registration"
+msgstr ""
+
+msgid "Finances"
+msgstr ""
+
+msgid "Collaboration Policy"
+msgstr ""
+
+msgid "Honor Code Pledge"
+msgstr ""
+
+msgid "Changing the Honor Code"
+msgstr ""
+
+msgid "usernames and postings"
+msgstr ""
+
+msgid "consent to processing outside home country"
+msgstr ""
+
+msgid "personal information"
+msgstr ""
+
+msgid "information we collect and how we use it"
+msgstr ""
+
+msgid "use and disclosure to third parties"
+msgstr ""
+
+msgid "use for personalization and pedagogical improvementsy"
+msgstr ""
+
+msgid "links to other websites"
+msgstr ""
+
+msgid "security"
+msgstr ""
+
+msgid "changing our privacy policy"
+msgstr ""
+
+msgid "minors"
+msgstr ""
+
+msgid "privacy concerns"
+msgstr ""
+
+msgid "rules for online conduct"
+msgstr ""
+
+msgid "prohibited content"
+msgstr ""
+
+msgid "user accounts and authority"
+msgstr ""
+
+msgid "your right to use content on the site"
+msgstr ""
+
+msgid "user postings"
+msgstr ""
+
+msgid "certificates of completion"
+msgstr ""
+
+msgid "trademarks"
+msgstr ""
+
+msgid "digital millennium copyright act"
+msgstr ""
+
+msgid "indemnification"
+msgstr ""
+
+msgid "miscellaneous"
+msgstr ""
+
+msgid "the following types of content are strictly prohibited on the site:"
+msgstr ""
+
+msgid "More about this site"
+msgstr ""
+
+msgid "View All"
+msgstr ""
+
+#: lms/templates/footer.html
+msgid "More about"
+msgstr ""
+
+#: lms/templates/index.html
+msgid "Watch video"
+msgstr ""
+
+#: lms/templates/courseware/courses.html
+msgid "All Courses"
+msgstr ""
+
+msgid "Credentials"
+msgstr ""
+
+msgid "Report unethical or harassing conduct"
+msgstr ""
+
+msgid "Questions about accessibility for students with disabilities"
+msgstr ""
+
+msgid "Links to Other Sites"
+msgstr ""
+
+msgid "Governing Law and Disputes"
+msgstr ""
+
+#: lms/templates/courseware/course_about.html
+msgid "An error occurred. Please try again later."
+msgstr ""
+
+#: lms/templates/courseware/courses.html
+msgid "Explore our most popular courses"
+msgstr ""
+
+msgid "Mobile Application"
+msgstr ""
+
+msgid "FAQ's"
+msgstr ""
+
+msgid "General FAQs"
+msgstr ""
+
+#: lms/templates/footer.html
+msgid "About this Site"
+msgstr ""
+
+#: lms/templates/courseware/course_about.html
+msgid "Start Date"
+msgstr ""
+
+#: lms/templates/courseware/course_about.html
+msgid "Duration"
+msgstr ""
+
+#: lms/templates/courseware/course_about.html
+msgid "Price"
+msgstr ""
+
+#: lms/templates/courseware/course_about.html
+msgid "Course Description"
+msgstr ""
+
+#: lms/templates/courseware/course_about.html
+msgid "What you'll learn"
+msgstr ""
+
+#: lms/templates/courseware/course_about.html
+msgid "Want to purchase this course for a group?"
+msgstr ""
+
+#: lms/templates/courseware/course_about.html
+msgid "You can purchase enrollment codes for this course to distribute to your team"
+msgstr ""
+
+#: lms/templates/courseware/course_about.html
+msgid "Instructors"
+msgstr ""
+
+#: lms/templates/courseware/course_about.html
+msgid "Enroll"
+msgstr ""
+
+#: lms/templates/courseware/courses.html
+#: lms/templates/courseware/header.html
+msgid "Courses"
+msgstr ""
+
+msgid "Blogs"
+msgstr ""
+
+msgid "Contact Us"
+msgstr ""
+
+msgid "Email"
+msgstr ""
+
+msgid "Full Name"
+msgstr ""
+
+msgid "I am a"
+msgstr ""
+
+msgid "Select"
+msgstr ""
+
+msgid "Learner"
+msgstr ""
+
+msgid "Teacher"
+msgstr ""
+
+msgid "Other"
+msgstr ""
+
+msgid "Inquiry Type"
+msgstr ""
+
+msgid "Payments"
+msgstr ""
+
+msgid "Certificates"
+msgstr ""
+
+msgid "Assessments"
+msgstr ""
+
+msgid "Videos"
+msgstr ""
+
+msgid "Discussion Forums"
+msgstr ""
+
+msgid "Message"
+msgstr ""
+
+msgid "Submit"
+msgstr ""
+
+msgid "Required Fields"
+msgstr ""
+
+msgid "Thank you for your inquiry"
+msgstr ""
+
+msgid "We'll get back to you within 24 hours."
+msgstr ""
+
+msgid "License"
+msgstr ""
+
+msgid "Ownership"
+msgstr ""
+
+msgid "Subscription Term"
+msgstr ""
+
+msgid "Permitted Uses and Prohibitions"
+msgstr ""
+
+msgid "Restriction Against Transfer"
+msgstr ""
+
+msgid "Use Of Professional Judgment"
+msgstr ""
+
+msgid "No Warranty"
+msgstr ""
+
+msgid "Limitation Of Liability"
+msgstr ""
+
+msgid "General"
+msgstr ""
+
+msgid "Back to top"
+msgstr ""
+
+msgid "Privacy Statement"
+msgstr ""
+
+msgid "General Statement"
+msgstr ""
+
+msgid "Personal Information Collected and Use of Information"
+msgstr ""
+
+msgid "Usage Information Collected and Use of Information"
+msgstr ""
+
+msgid "External Links"
+msgstr ""
+
+msgid "Security Precautions"
+msgstr ""
+
+msgid "Access to the Site"
+msgstr ""
+
+msgid "User Accounts"
+msgstr ""
+
+msgid "Course Modification or Cancellation"
+msgstr ""
+
+msgid "License to use Site Materials"
+msgstr ""
+
+msgid "Modifications to Site"
+msgstr ""
+
+msgid "Rules for Online Conduct"
+msgstr ""
+
+msgid "Security Rules"
+msgstr ""
+
+msgid "Content Disclaimer"
+msgstr ""
+
+msgid "User Status and Statement of Accomplishment"
+msgstr ""
+
+msgid "International Use and Consent to Processing"
+msgstr ""
+
+msgid "Disclaimer of Warranties"
+msgstr ""
+
+msgid "Termination of Rights"
+msgstr ""
+
+msgid "Consumer Notice"
+msgstr ""
+
+msgid "Use of Name"
+msgstr ""
+
+msgid "Copyright Complaints"
+msgstr ""
+
+msgid "Notices"
+msgstr ""
+
+msgid "Waiver"
+msgstr ""
+
+msgid "Severability"
+msgstr ""
+
+msgid "Use Of The Site"
+msgstr ""
+
+msgid "User Age and Eligibility"
+msgstr ""
+
+msgid "Indemnification"
+msgstr ""
+
+msgid "Entire Agreement"
+msgstr ""
+
+#: lms/templates/student_account/login_and_register.html
+msgid "Sign in or Create Account"
+msgstr ""
+
+#: lms/templates/course.html
+msgid "LEARN MORE"
+msgstr ""
+
+#: lms/templates/course.html
+msgid "Starts"
+msgstr ""
+
+#: lms/templates/courses_list.html
+msgid "Explore our courses"
+msgstr ""
+
+#. Translators: This message is used as a label for a list of links that navigate to about pages on the website.
+#: lms/templates/footer.html
+msgid "About"
+msgstr ""
+
+#: lms/templates/footer.html
+msgid "Education"
+msgstr ""
+
+#: lms/templates/footer.html
+msgid "Research"
+msgstr ""
+
+#. Translators: This message is used as a label for a list of links that navigate to support pages on the website.
+#: lms/templates/footer.html
+msgid "Support"
+msgstr ""
+
+#. Translators: This message is used as a label for a list of links that navigate to connect pages on the website.
+#: lms/templates/footer.html
+msgid "Connect"
+msgstr ""
+
+#: lms/templates/footer.html
+msgid "Facebook"
+msgstr ""
+
+#: lms/templates/footer.html
+msgid "Instagram"
+msgstr ""
+
+#: lms/templates/footer.html
+msgid "LinkedIn"
+msgstr ""
+
+#: lms/templates/footer.html
+msgid "Twitter"
+msgstr ""
+
+#: lms/templates/header.html
+msgid "Global"
+msgstr ""
+
+#: lms/templates/header.html
+msgid "Dashboard"
+msgstr ""
+
+#: lms/templates/header.html
+msgid "Profile"
+msgstr ""
+
+#: lms/templates/header.html
+msgid "Account"
+msgstr ""
+
+#: lms/templates/header.html
+msgid "Sign Out"
+msgstr ""
+
+#: lms/templates/header.html
+msgid "Create Account"
+msgstr ""
+
+#: lms/templates/header.html
+msgid "Sign in"
+msgstr ""
+
+#: lms/templates/header.html
+msgid "Choose Language"
+msgstr ""
+
+#: lms/templates/header.html
+msgid "About Us"
+msgstr ""
+
+#: lms/templates/header.html
+msgid "News"
+msgstr ""
+
+#: lms/templates/footer.html
+msgid "YouTube"
+msgstr ""
