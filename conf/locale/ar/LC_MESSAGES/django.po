@@ -1,0 +1,472 @@
+# Translators:
+# AR C2 <e2f458fd4s512@outlook.com>, 2016
+# shefaa abu jabel <shefaa.aj@gmail.com>, 2016
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2016-09-01 10:46+0500\n"
+"PO-Revision-Date: 2016-09-01 10:48+0500\n"
+"Last-Translator: shefaa abu jabel <shefaa.aj@gmail.com>, 2016\n"
+"Language-Team: Arabic (https://www.transifex.com/open-edx/teams/6205/ar/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ar\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+"X-Generator: Poedit 1.8.7\n"
+
+msgid "Academic Planning"
+msgstr "التخطيط الدراسي"
+
+msgid "Registration"
+msgstr "التسجيل"
+
+msgid "Finances"
+msgstr "الموارد المالية"
+
+msgid "Collaboration Policy"
+msgstr "سياسة التعاون"
+
+msgid "Honor Code Pledge"
+msgstr "قسم ميثاق الشرف"
+
+msgid "Changing the Honor Code"
+msgstr "تغيير ميثاق الشرف"
+
+msgid "usernames and postings"
+msgstr "أسماء المستخدمين والمنشورات"
+
+msgid "consent to processing outside home country"
+msgstr "الموافقة على المعالجة خارج الدولة الوطن."
+
+msgid "personal information"
+msgstr "المعلومات الشخصية"
+
+msgid "information we collect and how we use it"
+msgstr "المعلومات التي نجمعها وطريقة استخدامنا لها"
+
+msgid "use and disclosure to third parties"
+msgstr "استخدام المعلومات والكشف عنها لجهات ثالثة"
+
+msgid "use for personalization and pedagogical improvementsy"
+msgstr "الاستخدام لإضفاء طابع شخصي وإجراء تحسينات تربوية"
+
+msgid "links to other websites"
+msgstr "روابط إلى مواقع إلكترونية أخرى"
+
+msgid "security"
+msgstr "الأمن"
+
+msgid "changing our privacy policy"
+msgstr "تغيير سياسة الخصوصية لدينا"
+
+msgid "minors"
+msgstr "القاصرون"
+
+msgid "privacy concerns"
+msgstr "مخاوف المتعلقة بالخصوصية"
+
+msgid "rules for online conduct"
+msgstr "قواعد السلوك على الإنترنت"
+
+msgid "prohibited content"
+msgstr "محتوى محظور"
+
+msgid "user accounts and authority"
+msgstr "حسابات المستخدمين وصلاحياتهم"
+
+msgid "your right to use content on the site"
+msgstr "حقك في استخدام محتوى الموقع الإلكتروني"
+
+msgid "user postings"
+msgstr "منشورات المستخدم"
+
+msgid "certificates of completion"
+msgstr "شهادات إكمال الدورة"
+
+msgid "trademarks"
+msgstr "العلامات التجارية"
+
+msgid "digital millennium copyright act"
+msgstr "قانون الألفية للملكية الرقمية"
+
+msgid "indemnification"
+msgstr "التعويضات"
+
+msgid "miscellaneous"
+msgstr "متفرقات"
+
+msgid "the following types of content are strictly prohibited on the site:"
+msgstr "الأنواع التالية من المحتوى محظورة تمامًا على الموقع:"
+
+msgid "More about this site"
+msgstr "المزيد من المعلومات عن هذا الموقع"
+
+msgid "View All"
+msgstr "عرض الكل"
+
+#: lms/templates/footer.html
+msgid "More about"
+msgstr "المزيد عن"
+
+#: lms/templates/index.html
+msgid "Watch video"
+msgstr "شاهد الفيديو"
+
+#: lms/templates/courseware/courses.html
+msgid "All Courses"
+msgstr "جميع الدورات التعليمية"
+
+msgid "Credentials"
+msgstr "بيانات الاعتماد"
+
+msgid "Report unethical or harassing conduct"
+msgstr "الإبلاغ عن سلوك غير أخلاقي أو تحرش"
+
+msgid "Questions about accessibility for students with disabilities"
+msgstr "أسئلة عن إمكانية الوصول للطلاب ذوي الإعاقة"
+
+msgid "Links to Other Sites"
+msgstr "روابط إلى مواقع أخرى"
+
+msgid "Governing Law and Disputes"
+msgstr "النزاعات والقانون السائد"
+
+#: lms/templates/courseware/course_about.html
+msgid "An error occurred. Please try again later."
+msgstr "حدث خطأ. يرجى إعادة المحاولة لاحقًا."
+
+#: lms/templates/courseware/courses.html
+msgid "Explore our most popular courses"
+msgstr "استكشف دوراتنا الأكثر رواجاً"
+
+msgid "Mobile Application"
+msgstr "تطبيق الهاتف "
+
+msgid "FAQ's"
+msgstr "الأسئلة الشائعة"
+
+msgid "General FAQs"
+msgstr "الأسئلة الشائعة العامة"
+
+#: lms/templates/footer.html
+msgid "About this Site"
+msgstr "نبذة عن هذا الموقع"
+
+#: lms/templates/courseware/course_about.html
+msgid "Start Date"
+msgstr "تاريخ البدء"
+
+#: lms/templates/courseware/course_about.html
+msgid "Duration"
+msgstr "المدة"
+
+#: lms/templates/courseware/course_about.html
+msgid "Price"
+msgstr "السعر"
+
+#: lms/templates/courseware/course_about.html
+msgid "Course Description"
+msgstr "وصف الدورة التعليمية"
+
+#: lms/templates/courseware/course_about.html
+msgid "What you'll learn"
+msgstr "ما ستتعلمه"
+
+#: lms/templates/courseware/course_about.html
+msgid "Want to purchase this course for a group?"
+msgstr "هل ترغب في شراء هذه الدورة التعليمية لعدة أفراد؟"
+
+#: lms/templates/courseware/course_about.html
+msgid ""
+"You can purchase enrollment codes for this course to distribute to your team"
+msgstr ""
+"يمكنك شراء رموز التسجيل الخاصة بهذه الدورة التعليمية لتوزيعها على فريقك"
+
+#: lms/templates/courseware/course_about.html
+msgid "Instructors"
+msgstr "المدربون"
+
+#: lms/templates/courseware/course_about.html
+msgid "Enroll"
+msgstr "تسجيل"
+
+#: lms/templates/courseware/courses.html lms/templates/courseware/header.html
+msgid "Courses"
+msgstr "الدورات التعليمية"
+
+msgid "Blogs"
+msgstr "المدونات"
+
+msgid "Contact Us"
+msgstr "اتصل بنا"
+
+msgid "Email"
+msgstr "البريد الإلكتروني"
+
+msgid "Full Name"
+msgstr "الاسم الكامل"
+
+msgid "I am a"
+msgstr "أنا أعمل كَ"
+
+msgid "Select"
+msgstr "تحديد"
+
+msgid "Learner"
+msgstr "طالب"
+
+msgid "Teacher"
+msgstr "مدرس"
+
+msgid "Other"
+msgstr "آخر"
+
+msgid "Inquiry Type"
+msgstr "نوع الاستفسار"
+
+msgid "Payments"
+msgstr "طرق الدفع"
+
+msgid "Certificates"
+msgstr "الشهادات"
+
+msgid "Assessments"
+msgstr "التقييمات"
+
+msgid "Videos"
+msgstr "الفيديوهات"
+
+msgid "Discussion Forums"
+msgstr "منتديات المناقشة"
+
+msgid "Message"
+msgstr "رسالة"
+
+msgid "Submit"
+msgstr "إرسال"
+
+msgid "Required Fields"
+msgstr "الحقول المطلوبة"
+
+msgid "Thank you for your inquiry"
+msgstr "شكرًا على استفسارك"
+
+msgid "We'll get back to you within 24 hours."
+msgstr "سنقوم بالرد عليك خلال 24 ساعة."
+
+msgid "License"
+msgstr "الترخيص"
+
+msgid "Ownership"
+msgstr "الملكية"
+
+msgid "Subscription Term"
+msgstr "شروط الاشتراك"
+
+msgid "Permitted Uses and Prohibitions"
+msgstr "الاستخدامات المسموحة والمحظورات"
+
+msgid "Restriction Against Transfer"
+msgstr "قيود على النقل"
+
+msgid "Use Of Professional Judgment"
+msgstr "استخدام الحكم المهني"
+
+msgid "No Warranty"
+msgstr "غياب الضمانات"
+
+msgid "Limitation Of Liability"
+msgstr "حدود المسؤولية"
+
+msgid "General"
+msgstr "عام"
+
+msgid "Back to top"
+msgstr "عودة للأعلى"
+
+msgid "Privacy Statement"
+msgstr "بيان الخصوصية"
+
+msgid "General Statement"
+msgstr "بيان عام"
+
+msgid "Personal Information Collected and Use of Information"
+msgstr "المعلومات الشخصية التي يتم جمعها واستخدام تلك المعلومات"
+
+msgid "Usage Information Collected and Use of Information"
+msgstr "معلومات الاستخدام التي يتم جمعها واستخدامها"
+
+msgid "External Links"
+msgstr "روابط خارجية"
+
+msgid "Security Precautions"
+msgstr "احتياطات أمنية"
+
+msgid "Access to the Site"
+msgstr "الوصول إلى الموقع"
+
+msgid "User Accounts"
+msgstr "حسابات المستخدم"
+
+msgid "Course Modification or Cancellation"
+msgstr "تعديل الدورة التعليمية أو إلغاؤها"
+
+msgid "License to use Site Materials"
+msgstr "ترخيص استخدام المواد بالموقع"
+
+msgid "Modifications to Site"
+msgstr "تعديلات على الموقع"
+
+msgid "Rules for Online Conduct"
+msgstr "قواعد السلوك على الإنترنت"
+
+msgid "Security Rules"
+msgstr "قواعد أمنية"
+
+msgid "Content Disclaimer"
+msgstr "إخلاء المسؤولية عن المحتوى"
+
+msgid "User Status and Statement of Accomplishment"
+msgstr "حالة المستخدم وبيان الإنجاز"
+
+msgid "International Use and Consent to Processing"
+msgstr "الاستخدام الدولي والموافقة على المعالجة"
+
+msgid "Disclaimer of Warranties"
+msgstr "إخلاء المسؤولية عن الضمانات"
+
+msgid "Termination of Rights"
+msgstr "إنهاء الحقوق"
+
+msgid "Consumer Notice"
+msgstr "إخطار المستخدم"
+
+msgid "Use of Name"
+msgstr "استخدام الاسم"
+
+msgid "Copyright Complaints"
+msgstr "شكاوى حقوق النشر"
+
+msgid "Notices"
+msgstr "الإخطارات"
+
+msgid "Waiver"
+msgstr "التنازل"
+
+msgid "Severability"
+msgstr "قابلية الفصل"
+
+msgid "Use Of The Site"
+msgstr "استخدام الموقع"
+
+msgid "User Age and Eligibility"
+msgstr "عمر المستخدم وأهليته"
+
+msgid "Indemnification"
+msgstr "التعويضات"
+
+msgid "Entire Agreement"
+msgstr "الاتفاقية الكاملة"
+
+#: lms/templates/student_account/login_and_register.html
+msgid "Sign in or Create Account"
+msgstr "تسجيل الدخول أو إنشاء حساب"
+
+#: lms/templates/course.html
+msgid "LEARN MORE"
+msgstr "اطلع على المزيد"
+
+#: lms/templates/course.html
+msgid "Starts"
+msgstr "البدء"
+
+#: lms/templates/courses_list.html
+msgid "Explore our courses"
+msgstr "استكشف دوراتنا"
+
+#. Translators: This message is used as a label for a list of links that
+#. navigate to about pages on the website.
+#: lms/templates/footer.html
+msgid "About"
+msgstr "عن الموقع"
+
+#: lms/templates/footer.html
+msgid "Education"
+msgstr "التعليم"
+
+#: lms/templates/footer.html
+msgid "Research"
+msgstr "الأبحاث"
+
+#. Translators: This message is used as a label for a list of links that
+#. navigate to support pages on the website.
+#: lms/templates/footer.html
+msgid "Support"
+msgstr "الدعم"
+
+#. Translators: This message is used as a label for a list of links that
+#. navigate to connect pages on the website.
+#: lms/templates/footer.html
+msgid "Connect"
+msgstr "التواصل"
+
+#: lms/templates/footer.html
+msgid "Facebook"
+msgstr "فيسبوك"
+
+#: lms/templates/footer.html
+msgid "Instagram"
+msgstr "انستغرام"
+
+#: lms/templates/footer.html
+msgid "LinkedIn"
+msgstr "LinkedIn"
+
+#: lms/templates/footer.html
+msgid "Twitter"
+msgstr "تويتر"
+
+#: lms/templates/header.html
+msgid "Global"
+msgstr "عالمي"
+
+#: lms/templates/header.html
+msgid "Dashboard"
+msgstr "لوحة المعلومات"
+
+#: lms/templates/header.html
+msgid "Profile"
+msgstr "الملف الشخصي"
+
+#: lms/templates/header.html
+msgid "Account"
+msgstr "الحساب"
+
+#: lms/templates/header.html
+msgid "Sign Out"
+msgstr "تسجيل الخروج"
+
+#: lms/templates/header.html
+msgid "Create Account"
+msgstr "إنشاء حساب"
+
+#: lms/templates/header.html
+msgid "Sign in"
+msgstr "تسجيل الدخول"
+
+#: lms/templates/header.html
+msgid "Choose Language"
+msgstr "اختر لغة"
+
+#: lms/templates/header.html
+msgid "About Us"
+msgstr "نبذة عنا"
+
+#: lms/templates/header.html
+msgid "News"
+msgstr "الأخبار"
+
+#: lms/templates/footer.html
+msgid "YouTube"
+msgstr "YouTube"

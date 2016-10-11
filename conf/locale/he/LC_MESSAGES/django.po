@@ -1,0 +1,471 @@
+# Translators:
+# e2f_HE c1 <e2f_HE_c1@outlook.com>, 2016
+# qualityalltext <quality@alltext.co.il>, 2016
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2016-09-01 10:46+0500\n"
+"PO-Revision-Date: 2016-09-01 10:48+0500\n"
+"Last-Translator: qualityalltext <quality@alltext.co.il>, 2016\n"
+"Language-Team: Hebrew (https://www.transifex.com/open-edx/teams/6205/he/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: he\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.8.7\n"
+
+msgid "Academic Planning"
+msgstr "תכנון אקדמי"
+
+msgid "Registration"
+msgstr "רישום"
+
+msgid "Finances"
+msgstr "כספים"
+
+msgid "Collaboration Policy"
+msgstr "מדיניות שיתוף פעולה"
+
+msgid "Honor Code Pledge"
+msgstr "קוד אתי ליושרה אקדמית"
+
+msgid "Changing the Honor Code"
+msgstr "שינוי הקוד האתי"
+
+msgid "usernames and postings"
+msgstr "שמות משתמשים ופרסומים"
+
+msgid "consent to processing outside home country"
+msgstr "הסכמה לעיבוד מחוץ למדינת המגורים"
+
+msgid "personal information"
+msgstr "מידע אישי"
+
+msgid "information we collect and how we use it"
+msgstr "מידע שאנו אוספים וכיצד אנו משתמשים בו"
+
+msgid "use and disclosure to third parties"
+msgstr "שימוש וחשיפה לצדדים שלישיים"
+
+msgid "use for personalization and pedagogical improvementsy"
+msgstr "שימוש להתאמה אישית ושיפורים פדגוגיים"
+
+msgid "links to other websites"
+msgstr "קישורים לאתרי אינטרנט אחרים"
+
+msgid "security"
+msgstr "אבטחה"
+
+msgid "changing our privacy policy"
+msgstr "שינוי מדיניות הפרטיות שלנו"
+
+msgid "minors"
+msgstr "קטינים"
+
+msgid "privacy concerns"
+msgstr "חששות בנוגע לפרטיות"
+
+msgid "rules for online conduct"
+msgstr "כללים בנוגע להתנהגות מקוונת"
+
+msgid "prohibited content"
+msgstr "תוכן אסור"
+
+msgid "user accounts and authority"
+msgstr "חשבונות וסמכות המשתמש"
+
+msgid "your right to use content on the site"
+msgstr "הזכות שלך להשתמש בתוכן שבאתר"
+
+msgid "user postings"
+msgstr "פרסומי המשתמש"
+
+msgid "certificates of completion"
+msgstr "תעודות השלמה"
+
+msgid "trademarks"
+msgstr "סימני מסחר"
+
+msgid "digital millennium copyright act"
+msgstr "חוק זכויות היוצרים של המילניום הדיגיטלי"
+
+msgid "indemnification"
+msgstr "שיפוי"
+
+msgid "miscellaneous"
+msgstr "שונות"
+
+msgid "the following types of content are strictly prohibited on the site:"
+msgstr "חל איסור מוחלט לפרסם את סוגי התוכן הבאים באתר:"
+
+msgid "More about this site"
+msgstr "מידע נוסף אודות אתר זה"
+
+msgid "View All"
+msgstr "הצג הכל"
+
+#: lms/templates/footer.html
+msgid "More about"
+msgstr "מידע נוסף"
+
+#: lms/templates/index.html
+msgid "Watch video"
+msgstr "צפה בסרטון ווידאו"
+
+#: lms/templates/courseware/courses.html
+msgid "All Courses"
+msgstr "כל הקורסים"
+
+msgid "Credentials"
+msgstr "הרשאות"
+
+msgid "Report unethical or harassing conduct"
+msgstr "דווח על התנהגות לא אתית או מטרידה"
+
+msgid "Questions about accessibility for students with disabilities"
+msgstr "שאלות בנוגע לנגישות הסטודנטים בעלי המוגבלויות"
+
+msgid "Links to Other Sites"
+msgstr "קישורים לאתרים אחרים"
+
+msgid "Governing Law and Disputes"
+msgstr "החוק החל וערעורים"
+
+#: lms/templates/courseware/course_about.html
+msgid "An error occurred. Please try again later."
+msgstr "אירעה שגיאה. נסה שוב מאוחר יותר."
+
+#: lms/templates/courseware/courses.html
+msgid "Explore our most popular courses"
+msgstr "גלה את הקורסים הפופולריים ביותר שלנו"
+
+msgid "Mobile Application"
+msgstr "אפליקציה לנייד"
+
+msgid "FAQ's"
+msgstr "שאלות נפוצות"
+
+msgid "General FAQs"
+msgstr "שאלות נפוצות כלליות"
+
+#: lms/templates/footer.html
+msgid "About this Site"
+msgstr "אודות אתר זה"
+
+#: lms/templates/courseware/course_about.html
+msgid "Start Date"
+msgstr "תאריך התחלה"
+
+#: lms/templates/courseware/course_about.html
+msgid "Duration"
+msgstr "משך"
+
+#: lms/templates/courseware/course_about.html
+msgid "Price"
+msgstr "מחיר"
+
+#: lms/templates/courseware/course_about.html
+msgid "Course Description"
+msgstr "תיאור הקורס"
+
+#: lms/templates/courseware/course_about.html
+msgid "What you'll learn"
+msgstr "מה שתלמד"
+
+#: lms/templates/courseware/course_about.html
+msgid "Want to purchase this course for a group?"
+msgstr "האם ברצונך לרכוש קורס זה עבור קבוצה?"
+
+#: lms/templates/courseware/course_about.html
+msgid ""
+"You can purchase enrollment codes for this course to distribute to your team"
+msgstr "באפשרותך לרכוש קודי רישום עבור קורס זה כדי להפיץ לצוות שלך"
+
+#: lms/templates/courseware/course_about.html
+msgid "Instructors"
+msgstr "מנחים"
+
+#: lms/templates/courseware/course_about.html
+msgid "Enroll"
+msgstr "הירשם"
+
+#: lms/templates/courseware/courses.html lms/templates/courseware/header.html
+msgid "Courses"
+msgstr "קורסים"
+
+msgid "Blogs"
+msgstr "בלוגים"
+
+msgid "Contact Us"
+msgstr "צור איתנו קשר"
+
+msgid "Email"
+msgstr "דואר אלקטרוני"
+
+msgid "Full Name"
+msgstr "שם מלא"
+
+msgid "I am a"
+msgstr "אני"
+
+msgid "Select"
+msgstr "בחר"
+
+msgid "Learner"
+msgstr "לומד"
+
+msgid "Teacher"
+msgstr "אחר"
+
+msgid "Other"
+msgstr "אחר"
+
+msgid "Inquiry Type"
+msgstr "סוג שאילתה"
+
+msgid "Payments"
+msgstr "תשלומים"
+
+msgid "Certificates"
+msgstr "תעודות"
+
+msgid "Assessments"
+msgstr "הערכות"
+
+msgid "Videos"
+msgstr "סרטונים"
+
+msgid "Discussion Forums"
+msgstr "פורומים לדיון"
+
+msgid "Message"
+msgstr "הודעה"
+
+msgid "Submit"
+msgstr "שלח"
+
+msgid "Required Fields"
+msgstr "שדות חובה"
+
+msgid "Thank you for your inquiry"
+msgstr "תודה על שאלתך"
+
+msgid "We'll get back to you within 24 hours."
+msgstr "נחזור אליך ב-24 השעות הקרובות."
+
+msgid "License"
+msgstr "רישיון"
+
+msgid "Ownership"
+msgstr "בעלות"
+
+msgid "Subscription Term"
+msgstr "מונח בנושא הרשמה"
+
+msgid "Permitted Uses and Prohibitions"
+msgstr "שימושים מותרים ואיסורים"
+
+msgid "Restriction Against Transfer"
+msgstr "הגבלה כנגד העברה"
+
+msgid "Use Of Professional Judgment"
+msgstr "שימוש בשיפוט מקצועי"
+
+msgid "No Warranty"
+msgstr "ללא אחריות"
+
+msgid "Limitation Of Liability"
+msgstr "הגבלת חבות"
+
+msgid "General"
+msgstr "כללי"
+
+msgid "Back to top"
+msgstr "חזרה למעלה"
+
+msgid "Privacy Statement"
+msgstr "הצהרת פרטיות"
+
+msgid "General Statement"
+msgstr "הצהרה כללית"
+
+msgid "Personal Information Collected and Use of Information"
+msgstr "מידע אישי שנאסף ושימוש במידע"
+
+msgid "Usage Information Collected and Use of Information"
+msgstr "פרטי שימוש שנאספו ושימוש במידע"
+
+msgid "External Links"
+msgstr "קישורים חיצוניים"
+
+msgid "Security Precautions"
+msgstr "אזהרות אבטחה"
+
+msgid "Access to the Site"
+msgstr "גישה לאתר"
+
+msgid "User Accounts"
+msgstr "חשבונות משתמש"
+
+msgid "Course Modification or Cancellation"
+msgstr "שינוי או ביטול קורס"
+
+msgid "License to use Site Materials"
+msgstr "רישיון לשימוש בחומרים באתר"
+
+msgid "Modifications to Site"
+msgstr "שינויים באתר"
+
+msgid "Rules for Online Conduct"
+msgstr "כללים להתנהגות מקוונת"
+
+msgid "Security Rules"
+msgstr "כללי אבטחה"
+
+msgid "Content Disclaimer"
+msgstr "כתב ויתור על תוכן"
+
+msgid "User Status and Statement of Accomplishment"
+msgstr "סטטוס המשתמש והצהרת הישגים"
+
+msgid "International Use and Consent to Processing"
+msgstr "שימוש בינלאומי והסכמה לעיבוד"
+
+msgid "Disclaimer of Warranties"
+msgstr "כתב ויתור על אחריות"
+
+msgid "Termination of Rights"
+msgstr "הפסקת זכויות"
+
+msgid "Consumer Notice"
+msgstr "הודעת צרכן"
+
+msgid "Use of Name"
+msgstr "שימוש בשם"
+
+msgid "Copyright Complaints"
+msgstr "תלונות בנוגע לזכויות יוצרים"
+
+msgid "Notices"
+msgstr "הודעות"
+
+msgid "Waiver"
+msgstr "כתב ויתור"
+
+msgid "Severability"
+msgstr "דרגת חומרה"
+
+msgid "Use Of The Site"
+msgstr "שימוש באתר"
+
+msgid "User Age and Eligibility"
+msgstr "הגיל והכשירות של המשתמש"
+
+msgid "Indemnification"
+msgstr "שיפוי"
+
+msgid "Entire Agreement"
+msgstr "ההסכם כולו"
+
+#: lms/templates/student_account/login_and_register.html
+msgid "Sign in or Create Account"
+msgstr "היכנס או צור חשבון"
+
+#: lms/templates/course.html
+msgid "LEARN MORE"
+msgstr "למד עוד"
+
+#: lms/templates/course.html
+msgid "Starts"
+msgstr "מתחיל"
+
+#: lms/templates/courses_list.html
+msgid "Explore our courses"
+msgstr "גלה את הקורסים שלנו"
+
+#. Translators: This message is used as a label for a list of links that
+#. navigate to about pages on the website.
+#: lms/templates/footer.html
+msgid "About"
+msgstr "אודות"
+
+#: lms/templates/footer.html
+msgid "Education"
+msgstr "חינוך"
+
+#: lms/templates/footer.html
+msgid "Research"
+msgstr "מחקר"
+
+#. Translators: This message is used as a label for a list of links that
+#. navigate to support pages on the website.
+#: lms/templates/footer.html
+msgid "Support"
+msgstr "תמיכה"
+
+#. Translators: This message is used as a label for a list of links that
+#. navigate to connect pages on the website.
+#: lms/templates/footer.html
+msgid "Connect"
+msgstr "התחבר"
+
+#: lms/templates/footer.html
+msgid "Facebook"
+msgstr "פייסבוק"
+
+#: lms/templates/footer.html
+msgid "Instagram"
+msgstr "אינסטגרם"
+
+#: lms/templates/footer.html
+msgid "LinkedIn"
+msgstr "לינקדאין"
+
+#: lms/templates/footer.html
+msgid "Twitter"
+msgstr "טוויטר"
+
+#: lms/templates/header.html
+msgid "Global"
+msgstr "גלובלי"
+
+#: lms/templates/header.html
+msgid "Dashboard"
+msgstr "לוח בקרה"
+
+#: lms/templates/header.html
+msgid "Profile"
+msgstr "פרופיל"
+
+#: lms/templates/header.html
+msgid "Account"
+msgstr "חשבון"
+
+#: lms/templates/header.html
+msgid "Sign Out"
+msgstr "יציאה"
+
+#: lms/templates/header.html
+msgid "Create Account"
+msgstr "צור חשבון"
+
+#: lms/templates/header.html
+msgid "Sign in"
+msgstr "כניסה"
+
+#: lms/templates/header.html
+msgid "Choose Language"
+msgstr "בחר שפה"
+
+#: lms/templates/header.html
+msgid "About Us"
+msgstr "אודותינו"
+
+#: lms/templates/header.html
+msgid "News"
+msgstr "חדשות"
+
+#: lms/templates/footer.html
+msgid "YouTube"
+msgstr "יוטיוב"
