@@ -3,45 +3,27 @@
 <section class="footer-main container">
   <div class="grid-manual grid-container">
     <div class="row">
-      <div class="col-sm-12 col-md-3 footer-logo"><img src="{% static 'israelxedu.gov.il/images/default-logo.png' %}" alt="Home Page" /></div>
-      <div class="col-sm-12 col-md-5">
-        <div class="row">
-          <div class="col-sm-6">
+      <div class="col-sm-12 col-md-4 footer-logo"><img src="{% static 'israelxedu.gov.il/images/default-logo.png' %}" alt="Home Page" /></div>
+      <div class="col-sm-12 col-md-8">
+          <div class="col-xs-4">
             <ul>
               <li>About</li>
               <li><a target="_blank" href="{{ lms_base_url }}/about">About this Site</a></li>
-              <li><a target="_blank" href="{{ lms_base_url }}/faq">FAQ</a></li>
               <li><a target="_blank" href="{{ lms_base_url }}/contact">Contact Us</a></li>
             </ul>
           </div>
 
-          <div class="col-sm-6">
+          <div class="col-xs-4">
             <ul>
               <li>Support</li>
               <li><a target="_blank" href="{{ lms_base_url }}/tos">Terms of Service</a></li>
-              <li><a target="_blank" href="{{ lms_base_url }}/privacy">Privacy Policy</a></li>
-              <li><a target="_blank" href="{{ lms_base_url }}/honor">Honor Code</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-12 col-md-4">
-        <div class="row">
-          <div class="col-sm-6">
-            <ul>
-              <li>Connect</li>
-              <li><a target="_blank" href="">Facebook</a></li>
-              <li><a target="_blank" href="">Twitter</a></li>
-              <li><a target="_blank" href="">LinkedIn</a></li>
-              <li><a target="_blank" href="">YouTube</a></li>
             </ul>
           </div>
 
-          <div class="col-sm-6 openedx-logo">
+        <div class="col-xs-4 openedx-logo">
               <img class="img img-responsive" src="{% static 'israelxedu.gov.il/images/powered_by_open_edX_logo.png' %}" alt="openedx-logo" />
-          </div>
         </div>
+
       </div>
 
     </div>
