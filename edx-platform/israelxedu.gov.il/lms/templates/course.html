@@ -18,7 +18,13 @@ from django.core.urlresolvers import reverse
         <span class="course-organization">${course.display_org_with_default}</span>
         <span class="course-title">${course.display_name}</span>
       </h2>
-      <div class="course-date" aria-hidden="true">${course.start_datetime_text()} - ${course.end_datetime_text()}</div>
+      <div class="course-date" aria-hidden="true">
+          % if course.advertised_start:
+            ${course.advertised_start}
+          % else:
+            ${course.start_datetime_text()} - ${course.end_datetime_text()}
+          % endif
+      </div>
     </div>
     <div class="sr">
       <ul>

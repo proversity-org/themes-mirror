@@ -240,7 +240,11 @@ from openedx.core.djangolib.markup import Text, HTML
           </div>
           <div class="col col-12 sm-col-12 md-col-3 course-run">
             ${_("Start Date")}:
-            <span>${course_details.start_date.strftime('%b %-d, %Y')}</span>
+            % if course.advertised_start:
+                <span>${course.advertised_start}</span>
+            % else:
+                <span>${course_details.start_date.strftime('%b %-d, %Y')}</span>
+            % endif
           </div>
           <div class="col col-12 sm-col-12 md-col-3 course-run">
             ${_("Duration")}:
