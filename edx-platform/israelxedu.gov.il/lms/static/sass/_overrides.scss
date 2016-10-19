@@ -34,6 +34,9 @@ a{
     color: $brand-color !important;
   }
 }
+.no-padding{
+  padding: 0 !important;
+}
 #success-message{
   padding: 0;
   .alert {

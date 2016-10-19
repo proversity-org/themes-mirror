@@ -284,7 +284,7 @@ from openedx.core.djangolib.markup import Text, HTML
           </div>
           <%include file="_bulk_purchase_button.html" />
         </div>
-        <div class="col col-12"><h2>${_("Instructors")}</h2></div>
+        <div class="col col-12 no-padding"><h2>${_("Instructors")}</h2></div>
         <% index = 0 %>
         % for instructors in izip_longest(*([iter(course_details.instructor_info['instructors'])] * 2)):
         <div class="row instructors">
