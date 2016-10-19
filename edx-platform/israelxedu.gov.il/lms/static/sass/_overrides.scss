@@ -1517,6 +1517,10 @@ header.header-main {
      }
   }
 
+  .rtl .hero.hero-video .tint-dark .grid-container .row .description{
+    padding-right: 1.04167%;
+  }
+
 }
 
 @media screen and (min-width: 64em){ /* 980px */
@@ -1562,9 +1566,17 @@ header.header-main {
       }
     }
   }
-  .hero.hero-video .grid-container .row .description .data{
-    h1{
-      text-align: right;
+  .hero.hero-video .grid-container .row {
+    .description{
+      padding-right: 2%;
+      .data {
+        h1 {
+          text-align: right;
+        }
+      }
+    }
+    .video{
+      float: left;
     }
   }
   .footer-main ul li:last-child{
