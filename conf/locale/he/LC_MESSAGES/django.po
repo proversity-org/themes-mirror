@@ -190,6 +190,15 @@ msgstr "מנחים"
 msgid "Enroll"
 msgstr "הירשם"
 
+msgid "Enroll Now"
+msgstr "הרשם עכשיו"
+
+msgid "Enrollment is Closed"
+msgstr "ההרשמה סגורה"
+
+msgid "Go to Course"
+msgstr "מעבר לקורס"
+
 #: lms/templates/courseware/courses.html lms/templates/courseware/header.html
 msgid "Courses"
 msgstr "קורסים"
