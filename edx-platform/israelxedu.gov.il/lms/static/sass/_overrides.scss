@@ -34,6 +34,9 @@ a{
     color: $brand-color !important;
   }
 }
+.no-padding{
+  padding: 0 !important;
+}
 #success-message{
   padding: 0;
   .alert {
@@ -347,6 +350,7 @@ header.header-main {
       .language-selection {
         display: inline-block;
         position: relative;
+        line-height: 25px;
       }
 
       .language-selection select {
@@ -984,8 +988,7 @@ header.header-main {
           margin-top: 0;
           color: $brand-color;
           line-height: 1rem;
-          padding-left: 1.3rem;
-          padding-bottom: 1.5rem;
+          padding: 0 1.3rem 1.5rem;
           font-size: 0.8rem;
           span{
             display: block;
@@ -1517,6 +1520,10 @@ header.header-main {
      }
   }
 
+  .rtl .hero.hero-video .tint-dark .grid-container .row .description{
+    padding-right: 1.04167%;
+  }
+
 }
 
 @media screen and (min-width: 64em){ /* 980px */
@@ -1562,10 +1569,26 @@ header.header-main {
       }
     }
   }
+  .hero.hero-video .grid-container .row {
+    .description{
+      padding-right: 2%;
+      .data {
+        h1 {
+          text-align: right;
+        }
+      }
+    }
+    .video{
+      float: left;
+    }
+  }
   .footer-main ul li:last-child{
     text-align: right;
   }
   .static-content h1{
     text-align: right;
+  }
+  .course-index .accordion .course-navigation .button-chapter .group-heading {
+    padding: 15px 40px 15px 20px;
   }
 }

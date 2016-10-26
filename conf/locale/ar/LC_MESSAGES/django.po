@@ -191,6 +191,15 @@ msgstr "المدربون"
 msgid "Enroll"
 msgstr "تسجيل"
 
+msgid "Enroll Now"
+msgstr "قم بالتسجيل الان"
+
+msgid "Enrollment is Closed"
+msgstr "التسجيل مغلق"
+
+msgid "Go to Course"
+msgstr "الانتقال الى الدورة"
+
 #: lms/templates/courseware/courses.html lms/templates/courseware/header.html
 msgid "Courses"
 msgstr "الدورات التعليمية"

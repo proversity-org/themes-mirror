@@ -186,6 +186,15 @@ msgstr ""
 msgid "Enroll"
 msgstr ""
 
+msgid "Enroll Now"
+msgstr ""
+
+msgid "Enrollment is Closed"
+msgstr ""
+
+msgid "Go to Course"
+msgstr ""
+
 #: lms/templates/courseware/courses.html
 #: lms/templates/courseware/header.html
 msgid "Courses"
