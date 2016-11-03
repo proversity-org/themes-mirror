@@ -1301,7 +1301,7 @@ header.header-main {
   padding: 5px;
 }
 
-.instructor-dashboard-content-2 .slickgrid .slick-cell {
+.instructor-dashboard-content-2 .profile-data-display-table .slickgrid .slick-cell {
   height: 35px;
   padding: 10px 5px 10px 5px;
   border: none;
@@ -1310,6 +1310,10 @@ header.header-main {
   &.l12.r12{
     border-right: 1px dotted silver;
   }
+}
+
+.instructor-dashboard-content-2 .content-history-table-inner .slickgrid .slick-cell {
+  height: 50px;
 }
 
 //Media Queries
@@ -1646,5 +1650,11 @@ header.header-main {
     right: 0 !important;
     left: inherit !important;
     width: 1097px !important;
+  }
+  .content-history-table-inner .ui-state-default.slick-header-column {
+    width: 217px !important;
+  }
+  .instructor-dashboard-content-2 .content-history-table-inner .slickgrid .slick-cell {
+    width: 217px;
   }
 }
