@@ -12,27 +12,27 @@ from django.utils.translation import ugettext as _
           <li><a href="/"><img src="${static.url('images/logo.png')}" alt="Logo" /></a></li>
       </ul>
     </div>
-      <div class="col col-12 sm-col-12 md-col-8">
-        <div class="col col-4">
-          <ul>
-            <li>
-                ## Translators: This message is used as a label for a list of links that navigate to about pages on the website.
-                ${_("About")}
-            </li>
-            <li><a href="/about">${_("About this Site")}</a></li>
-            <li><a href="/contact">${_("Contact Us")}</a></li>
-          </ul>
-        </div>
-        <div class="col col-4">
-          <ul>
-            <li>
-                ## Translators: This message is used as a label for a list of links that navigate to support pages on the website.
-                ${_("Support")}
-            </li>
-            <li><a href="/tos">${_("Terms of Service")}</a></li>
-          </ul>
-        </div>
-        <div class="col col-4 open-edx-logo">
+    <div class="col col-12 sm-col-12 md-col-8 grid-container">
+      <div class="col col-4">
+        <ul>
+          <li>
+              ## Translators: This message is used as a label for a list of links that navigate to about pages on the website.
+              ${_("About")}
+          </li>
+          <li><a href="/about">${_("About this Site")}</a></li>
+          <li><a href="/contact">${_("Contact Us")}</a></li>
+        </ul>
+      </div>
+      <div class="col col-4">
+        <ul>
+          <li>
+              ## Translators: This message is used as a label for a list of links that navigate to support pages on the website.
+              ${_("Support")}
+          </li>
+          <li><a href="/tos">${_("Terms of Service")}</a></li>
+        </ul>
+      </div>
+      <div class="col col-4 open-edx-logo">
         <ul>
           <li>
             <a href="https://open.edx.org">
@@ -41,7 +41,7 @@ from django.utils.translation import ugettext as _
           </li>
         </ul>
       </div>
-      </div>
+    </div>
   </div>
 </div>
 </section>
