@@ -7,8 +7,8 @@ body{
   }
 
 }
-//Helper Classes
 
+//Helper Classes
 .pull-left{
   float: left !important;
 }
@@ -105,6 +105,8 @@ a{
   border-color: transparent !important;
 }
 .inner-container{
+  @include grid-container();
+  @include span(12);
   padding: 0 1.25rem;
 }
 h2{
@@ -611,6 +613,11 @@ header.header-main {
         .video{
           float: none;
           padding: 0;
+          @media (max-width: 767px) {
+            margin: 0;
+            width: 100%;
+            order: -1;
+          }
           .video-data{
             position: relative;
             text-align: center;
@@ -944,8 +951,8 @@ header.header-main {
       }
     }
     .instructors{
-      display: table;
-      width: 100%;
+      @include grid-container();
+      @include span(12);
 
       .modal {
         .btn-close {

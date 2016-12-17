@@ -204,13 +204,19 @@ from openedx.core.djangolib.markup import Text, HTML
 <% video_class = "" if course_details.intro_video and course_details.video_thumbnail_image_name else "no-video" %>
 
 <section class="course-info" xmlns="http://www.w3.org/1999/html">
-  <header class="hero hero-video grid-manual ${video_class}">
-    <div class="hero-image" style="background: url('${static.url(course_details.banner_image_asset_path)}') no-repeat center right;">
+  <header class="hero hero-video ${video_class}">
+    <div class="hero-image" style="background: url('${static.url(course_details.banner_image_asset_path)}') no-repeat center right / cover;">
       <div class="tint-dark"></div>
     </div>
     <div class="tint-dark">
       <div class="grid-container grid-manual">
         <div class="row">
+          <div class="col col-12 sm-col-12 md-col-8 lg-col-8 xl-col-8 description">
+            <div class="data">
+              <h1>${course_details.title or course.display_name}</h1>
+              <p>${course_details.subtitle}</p>
+            </div>
+          </div>
           <div class="col col-12 sm-col-12 md-col-4 lg-col-4 xl-col-4 video">
             % if course_details.intro_video and course_details.video_thumbnail_image_name:
             <div class="video-data">
@@ -220,12 +226,6 @@ from openedx.core.djangolib.markup import Text, HTML
               </a>
             </div>
             % endif
-          </div>
-          <div class="col col-12 sm-col-12 md-col-8 lg-col-8 xl-col-8 description">
-            <div class="data">
-              <h1>${course_details.title or course.display_name}</h1>
-              <p>${course_details.subtitle}</p>
-            </div>
           </div>
         </div>
       </div>
@@ -263,64 +263,62 @@ from openedx.core.djangolib.markup import Text, HTML
     </div>
   </div>
   <div class="grid-manual grid-container">
-    <div class="inner-container">
-      <div class="description-container">
-        <div class="row">
-          <div class="col col-12 sm-col-12 md-col-8">
+    <div class="description-container inner-container">
+      <div class="row">
+        <div class="col col-12 sm-col-12 md-col-8">
 
-            <h2> ${_("Course Description")}</h2>
-            <div class="course-description">
-              <p>${course_details.description}</p>
-            </div>
-
-            <h2> ${_("What you'll learn")}</h2>
-            <div class="course-learning">
-              <ul class="list-bulleted">
-                % for item in course_details.learning_info:
-                  <li>${item}</li>
-                %endfor
-              </ul>
-            </div>
+          <h2> ${_("Course Description")}</h2>
+          <div class="course-description">
+            <p>${course_details.description}</p>
           </div>
-          <%include file="_bulk_purchase_button.html" />
+
+          <h2> ${_("What You'll Learn")}</h2>
+          <div class="course-learning">
+            <ul class="list-bulleted">
+              % for item in course_details.learning_info:
+                <li>${item}</li>
+              %endfor
+            </ul>
+          </div>
         </div>
-        <div class="col col-12 no-padding"><h2>${_("Instructors")}</h2></div>
-        <% index = 0 %>
-        % for instructors in izip_longest(*([iter(course_details.instructor_info['instructors'])] * 2)):
-        <div class="row instructors">
-          % for instructor in [i for i in instructors if i is not None]:
-            <% index += 1 %>
-            <div class="col col-12 sm-col-12 md-col-6 lg-col-6 xl-col-6">
-              <div class="thumbnail">
-                  <a href="#instructor-details-${index}" class="instructor-image"><img src="${static.url(instructor['image'])}" alt="${instructor['name']}"></a>
-              </div>
-              <p>${instructor['name']} <span>${instructor['title']}</span></p>
-              <div class="modal modal-custom" id="instructor-details-${index}">
-                 <div class="btn-close modal_close"><i class="fa fa-close"></i></div>
-                 <div class="modal-body">
-                   <div class="modal-header">
-                     <div class="instructor-data">
-                       <div class="thumbnail">
-                         <img src="${instructor['image']}" alt="${instructor['name']}">
-                       </div>
-                       <h3>
-                         <span class="instructor-name">${instructor['name']}</span>
-                         <span>${instructor['title']}
-                         % if instructor['organization']:
-                             at ${instructor['organization']}
-                         % endif
-                         </span>
-                       </h3>
-                     </div>
-                   </div>
-                   <div class="instructor-bio">${instructor['bio']}</div>
-                 </div>
-               </div>
+        <%include file="_bulk_purchase_button.html" />
+      </div>
+      <div class="col col-12 no-padding"><h2>${_("Instructors")}</h2></div>
+      <% index = 0 %>
+      % for instructors in izip_longest(*([iter(course_details.instructor_info['instructors'])] * 2)):
+      <div class="row instructors">
+        % for instructor in [i for i in instructors if i is not None]:
+          <% index += 1 %>
+          <div class="col col-12 sm-col-12 md-col-6 lg-col-6 xl-col-6">
+            <div class="thumbnail">
+                <a href="#instructor-details-${index}" class="instructor-image"><img src="${static.url(instructor['image'])}" alt="${instructor['name']}"></a>
             </div>
-          % endfor
-        </div>
+            <p>${instructor['name']} <span>${instructor['title']}</span></p>
+            <div class="modal modal-custom" id="instructor-details-${index}">
+               <div class="btn-close modal_close"><i class="fa fa-close"></i></div>
+               <div class="modal-body">
+                 <div class="modal-header">
+                   <div class="instructor-data">
+                     <div class="thumbnail">
+                       <img src="${instructor['image']}" alt="${instructor['name']}">
+                     </div>
+                     <h3>
+                       <span class="instructor-name">${instructor['name']}</span>
+                       <span>${instructor['title']}
+                       % if instructor['organization']:
+                           at ${instructor['organization']}
+                       % endif
+                       </span>
+                     </h3>
+                   </div>
+                 </div>
+                 <div class="instructor-bio">${instructor['bio']}</div>
+               </div>
+             </div>
+          </div>
         % endfor
       </div>
+      % endfor
     </div>
   </div>
   <div class="light-bg course-about">
