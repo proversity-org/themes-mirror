@@ -95,13 +95,16 @@ from django.conf import settings
   }
 
   function submitForm(data) {
+    toggleDisableSubmitButton(true);
     $.post("/submit_feedback", data, function (data, status) {
       $("#success-message-btn").click();
       setTimeout( function(){
         $("#lean_overlay").trigger("click");
         $('#contact_form').trigger("reset");
+        toggleDisableSubmitButton(false);
       }  , 2000 );
     }).fail(function (xhr, status, error) {
+      toggleDisableSubmitButton(false);
       responseData = jQuery.parseJSON(xhr.responseText);
       addErrorDiv(responseData.field);
     });
@@ -140,6 +143,10 @@ from django.conf import settings
     }
     response.data = data;
     return response;
+  }
+
+  function toggleDisableSubmitButton(disabled) {
+    $("#submit_btn").prop("disabled", disabled);
   }
 
   $(function () {
