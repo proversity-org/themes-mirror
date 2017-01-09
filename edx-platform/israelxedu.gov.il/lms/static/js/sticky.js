@@ -4,18 +4,17 @@ var $el = $('#sticky'),
     MIN_WEB_WIDTH = 768;
 
 function initializeSticky(){
-    if ($el.length) {        //Element should exist
-        $(window).scroll(function(){
-            if ($(window).width() >= MIN_WEB_WIDTH){
-                var windowTop = $(window).scrollTop();
-                if (stickyBarTop < windowTop){
-                    makeSticky();
-                }
-                else {
-                    removeSticky();
-                }
-            }
-        });
+    if ($(window).width() >= MIN_WEB_WIDTH){
+        var windowTop = $(window).scrollTop();
+        if (stickyBarTop < windowTop){
+            makeSticky();
+        }
+        else {
+            removeSticky();
+        }
+    }
+    else {
+        removeSticky();
     }
 }
 
@@ -42,14 +41,13 @@ function removeSticky(){
 }
 
 $(document).ready(function(){
-    initializeSticky();
+    if ($el.length) {        //Element should exist
+        $(window).scroll(function(){
+            initializeSticky();
+        });
+    }
 });
 
 $(window).resize(function(){
-    if ($(window).width() >= MIN_WEB_WIDTH) {
-        makeSticky();
-    }
-    else {
-        removeSticky();
-    }
+    initializeSticky()
 });
