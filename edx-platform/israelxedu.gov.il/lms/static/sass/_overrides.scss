@@ -63,6 +63,7 @@ a{
 }
 .show-user-menu{
   display: block !important;
+  right: -16px !important;
 }
 
 .hidden-mobile{
@@ -477,14 +478,20 @@ header.header-main {
             }
           }
           &:before{
-            content: "\f0d8";
-            position: absolute;
-            font-family: 'FontAwesome';
-            right: calc(50% - 9px);
-            top: -20px;
-            color: $white;
-            font-size: 2rem;
-            line-height: normal;
+            content:"";
+            position:absolute;
+            width: 0;
+            height: 0;
+            border: {
+              top: 6px solid $border-color-4;
+              right: 6px solid $border-color-4;
+              bottom: 6px solid transparent;
+              left: 6px solid transparent;
+            }
+            box-shadow: 1px 0 0 0 $gray-l3, 0 -1px 0 0 $gray-l3;
+            @include transform(rotate(-45deg));
+            top: -5px;
+            right: calc(50% - 50px);
           }
         }
       }
@@ -1411,7 +1418,7 @@ header.header-main {
               right: 1rem;
               top: 100%;
               width: 100%;
-              margin-top: -1rem;
+              margin-top: -1.5rem;
               li{
                 display: block;
                 float: none;
@@ -1663,5 +1670,17 @@ header.header-main {
   }
   .instructor-dashboard-content-2 .content-history-table-inner .slickgrid .slick-cell {
     width: 219px;
+  }
+}
+
+@media(min-width: 768px) {
+  header.header-main .list-inline li.user-account ul:before {
+    right: 0.4rem;
+  }
+}
+
+@media(min-width: 1024px) {
+  header.header-main .list-inline li.user-account ul:before {
+    right: 0.72rem;
   }
 }
