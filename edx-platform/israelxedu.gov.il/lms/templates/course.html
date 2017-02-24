@@ -23,11 +23,11 @@ from django.core.urlresolvers import reverse
           ${course.advertised_start}
         % else:
           % if course.start is not None:
-            <span class="localized_datetime" data-format="shortDate" data-datetime="${course.start.strftime('%Y-%m-%dT%H:%M:%S%z')}"></span>
+            <span>${course.start.strftime('%b %-d, %Y')}</span>
           % endif
           % if course.end is not None:
             <span> - </span>
-            <span class="localized_datetime" data-format="shortDate" data-datetime="${course.end.strftime('%Y-%m-%dT%H:%M:%S%z')}"></span>
+            <span>${course.end.strftime('%b %-d, %Y')}</span>
           % endif
         % endif
       </div>
@@ -40,19 +40,10 @@ from django.core.urlresolvers import reverse
           % if course.advertised_start:
             <time itemprop="startDate" datetime="${course.advertised_start}">${course.advertised_start}</time>
           % else:
-            <time itemprop="startDate"
-              class="localized_datetime"
-              data-format="shortDate"
-              data-datetime="${course.start.strftime('%Y-%m-%dT%H:%M:%S%z')}"
-              datetime="${course.start.strftime('%Y-%m-%dT%H:%M:%S%z')}">
-            </time>
+            <time itemprop="startDate" datetime="${course.start}">${course.start.strftime('%b %-d, %Y')}</time>
           % endif
         </li>
       </ul>
     </div>
   </a>
 </article>
-
-<%static:require_module_async module_name="js/dateutil_factory" class_name="DateUtilFactory">
-    DateUtilFactory.transform(iterationKey=".localized_datetime");
-</%static:require_module_async>
