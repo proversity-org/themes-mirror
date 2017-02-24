@@ -742,6 +742,17 @@ header.header-main {
   }
 }
 
+//fix for browse button in instructor dashboard Bulk Exceptions
+#bulk-white-list-exception-form .btn {
+  border-style: none;
+  padding: 0;
+  font-weight: normal;
+  color: #000;
+}
+#bulk-white-list-exception-form .btn:hover {
+  background: #fff;
+}
+
 //About
 
 .about-container{
