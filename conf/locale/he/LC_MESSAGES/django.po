@@ -170,7 +170,7 @@ msgid "Course Description"
 msgstr "תיאור הקורס"
 
 #: lms/templates/courseware/course_about.html
-msgid "What you'll learn"
+msgid "What You Will Learn"
 msgstr "מה שתלמד"
 
 #: lms/templates/courseware/course_about.html
