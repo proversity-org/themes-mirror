@@ -1,0 +1,40 @@
+## mako
+<%namespace name='static' file='static_content.html'/>
+<%!
+from django.utils.translation import ugettext as _
+from django.core.urlresolvers import reverse
+%>
+<%page args="program" expression_filter="h"/>
+<article class="program" id="${program.get('marketing_slug')}" role="region" aria-label="${program.get('title')}">
+    <a class="programs-listing-item" href="${reverse('program_marketing_view', args=[program.get('uuid')])}">
+        <header class="program-image">
+            <div class="cover-image">
+                <img src="${program.get('banner_image', {}).get('x-small', {}).get('url')}" alt="${program.get('title')} "/>
+                <div class="learn-more" aria-hidden=true>${_("LEARN MORE")}</div>
+            </div>
+        </header>
+        <div class="banner">
+            ${program.get('type', {}).get('name')}
+        </div>
+        <div class="program-info">
+            % if program.get('authoring_organizations'):
+                <span class="program-org">${program.get('authoring_organizations')[0].get('key')}</span>
+            % endif
+            <h3 class="program-title">${program.get('title')}</h3>
+            <p class="program-subtitle">${program.get('subtitle')} </p>
+        </div>
+        <span class="program-footer">
+            <div class="availability">
+                <span class="sr">Availability: </span>
+                % if program.get('status') == 'active':
+                    Current
+                % else:
+                    Archived
+                % endif
+            </div>
+            <div class="program-logo">
+                <img src="${program.get('type', {}).get('logo_image', {}).get('large', {}).get('url')}" alt="${_('Logo Image')}"/>
+            </div>
+        </span>
+    </a>
+</article>

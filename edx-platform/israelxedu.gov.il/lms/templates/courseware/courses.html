@@ -34,14 +34,22 @@
               </div>
             </div>
 
+            <div class="row program-list">
+              % for program in programs_list:
+               <div class="col col-12 sm-col-12 md-col-4 lg-col-4">
+                   <%include file="../program.html" args="program=program" />
+               </div>
+              % endfor
+           </div>
+
             <div class="row course-list">
-              %for course in courses:
+              % for course in courses:
               <div class="col col-12 sm-col-12 md-col-4 lg-col-4">
                 <div class="courses-listing-item">
                   <%include file="../course.html" args="course=course" />
                 </div>
               </div>
-              %endfor
+              % endfor
             </div>
 
           </div>
