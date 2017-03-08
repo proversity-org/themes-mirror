@@ -1,0 +1,212 @@
+// Program marketing page
+
+body{
+    background-color: $body-background-color !important;
+  *{
+    &:focus{
+      outline: 0;
+    }
+  }
+
+}
+
+.main-banner {
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #000;
+    opacity: 0.35;
+  }
+
+  .grid-manual {
+    z-index: 1;
+    position: relative;
+
+    .btn-start {
+      color: #ffffff !important;
+    }
+  }
+}
+
+#courses {
+  .btn-enroll {
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: bold;
+  }
+}
+
+// Program catalog listing
+
+.program-list {
+
+  .programs-listing-item {
+    box-sizing: border-box;
+    box-shadow: 1px 2px 5px #ccc;
+    position: relative;
+    height: 360px;
+    overflow: visible;
+    min-height: 0;
+    border: none;
+    display: block;
+    margin: 0 auto 40px;
+    background: white;
+    border-radius: 0;
+
+    .program-image {
+      height: 142px;
+      position: relative;
+      overflow: hidden;
+
+      .cover-image {
+        height: 142px;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+
+        &:before {
+          content: '';
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          background: black;
+          opacity: 0;
+          transition: all 0.2s ease-out;
+        }
+        .learn-more {
+          left: calc(50% - 100px);
+          box-sizing: border-box;
+          position: absolute;
+          z-index: 100;
+          top: 62px;
+          padding: 0 20px;
+          width: 200px;
+          height: 50px;
+          border-color: #0074b4;
+          border-radius: 3px;
+          background: #0074b4;
+          color: #fff;
+          line-height: 50px;
+          text-align: center;
+          opacity: 0;
+          text-transform: none;
+          transition: all 0.25s ease;
+        }
+      }
+    }
+
+    .banner {
+      background: #065784;
+      color: white;
+      padding-right: 15px;
+      line-height: 18px;
+      font-weight: bold;
+      font-size: 0.7em;
+      text-align: right;
+      text-transform: uppercase;
+    }
+
+    .program-info {
+      padding: 12px 15px 5px;
+
+      .program-org {
+        font-weight: normal;
+        font-size: 0.9em;
+        color: #3d3e3f;
+        margin: 0;
+        line-height: 16px;
+      }
+
+      .program-title {
+        max-height: 55px;
+        overflow: hidden;
+        color: #222;
+        font-size: 1.25em;
+        line-height: 1.333;
+        margin-bottom: 5px;
+      }
+
+      .program-subtitle {
+        font-size: 1em;
+        margin-bottom: 33px;
+        line-height: 1.25em;
+        height: 40px;
+        color: #646464;
+        overflow: hidden;
+      }
+    }
+
+    .program-footer {
+      display: table;
+      width: 100%;
+      padding: 0 15px 15px;
+      position: absolute;
+      bottom: 0;
+
+      .availability,
+      .program-logo {
+        display: table-cell;
+        vertical-align: middle;
+      }
+
+      .availability {
+        text-align: left;
+        font-size: 0.9em;
+        line-height: 20px;
+        color: #3d3e3f;
+      }
+
+      .program-logo {
+        text-align: right;
+        width: 75px;
+      }
+    }
+
+    &:before,
+    &:after {
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: #d5d5d5;
+      border: 1px solid #b5b5b5;
+    }
+
+    &:before {
+      left: -5px;
+      top: -5px;
+      z-index: -1;
+    }
+
+    &:after {
+      left: -10px;
+      top: -10px;
+      z-index: -2;
+    }
+
+    &:hover {
+      opacity: 1;
+
+      .program-image {
+        .cover-image {
+          .learn-more {
+            opacity: 1;
+          }
+          &:before {
+            opacity: .6;
+          }
+        }
+      }
+    }
+  }
+}
