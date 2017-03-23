@@ -492,6 +492,55 @@ header.header-main {
   }
 }
 
+.wrapper-header-courses{
+  border-bottom: 1px solid $gray-lighter !important;
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 15px;
+  h2{
+    color: $black;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+  }
+  ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li{
+      display: inline-block;
+      margin: 0 0 0 -5px;
+      padding: 0 !important;
+      span.courses-heading{
+        margin-bottom: 20px;
+        display: inline-block;
+      }
+      a{
+        padding: 15px;
+        border-bottom: 4px solid transparent;
+        color: #414141;
+        display: block;
+        cursor: pointer;
+        &:hover{
+          border-bottom: 4px solid #0075b4;
+          opacity: 1;
+          color: #0075b4;
+        }
+      }
+      &.active{
+        a{
+          border-bottom: 4px solid #0075b4;
+          color: #0075b4;
+          font-weight: bold;
+        }
+      }
+      &:first-child{
+        margin: 0;
+      }
+    }
+  }
+}
+
 //Hero
 
 .hero {
@@ -1381,6 +1430,13 @@ header.header-main {
 .content-wrapper{
     max-width: none !important;
     padding-top: 0 !important;
+    padding-bottom: 20px;
+    .program-list-wrapper, .js-program-details-wrapper{
+      margin-top: 20px !important;
+    }
+    #dashboard-main{
+      padding-top: 0;
+    }
 }
 #program-details-page {
     color: $gray;
