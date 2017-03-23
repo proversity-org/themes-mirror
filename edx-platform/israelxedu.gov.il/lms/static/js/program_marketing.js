@@ -38,8 +38,32 @@ function paginate(page, size, total) {
     $(".pagination-end").text(end + 1);
 }
 
+$.fn.getFocusableChildren = function() {
+      return $(this)
+        .find('a[href], area[href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), button:not([disabled]), iframe, object:not([disabled]), embed, *[tabindex], *[contenteditable]')
+        .filter(':visible');
+};
+
 $(document).ready(function () {
     initializeCourseSlider();
+
+    // In order to restrict focus, we added two pseudo <a> elements, one before the instructor modal and one after.
+    // When reaching the first <a>, we focus the last element in the dialog. If there is no focusable element, we focus the close button
+    // When focusing the last <a>, we focus the first control in the dialog.
+    $('.focusKeeper:even').on('focus', function(event) {
+        event.preventDefault();
+        if ($(this).parent().find(".modal-body").getFocusableChildren().length) {
+            $(this).parent().find(".modal-body").getFocusableChildren().filter(':last').focus();
+        } else {
+            $(this).parent().find(".modal_close a").focus();
+        }
+    });
+
+    $('.focusKeeper:odd').on('focus', function(event) {
+        event.preventDefault();
+        $(this).parent().find(".modal_close a").focus();
+    });
+
     $(window).resize(function () {
         initializeCourseSlider();
     });
