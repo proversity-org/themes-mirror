@@ -2629,7 +2629,7 @@ h1, h2, h3, h4, h5, h6{
   }
 }
 
-
+// For RTL
 .rtl {
   header{
     &.header-main{
@@ -2674,18 +2674,26 @@ h1, h2, h3, h4, h5, h6{
   .grid-canvas {
     width: 1097px !important;
   }
-  .instructor-dashboard-content-2 .slickgrid .slick-cell {
-    float: right;
-    right: 0;
-    left: inherit;
-    position: relative !important;
-    width: 84px;
+  .instructor-dashboard-content-2 {
+    .slickgrid .slick-cell {
+      float: right;
+      right: 0;
+      left: inherit;
+      position: relative !important;
+      width: 84px;
 
-    &.l0.r0 {
-      border-right: 1px dotted silver;
+      &.l0.r0 {
+        border-right: 1px dotted silver;
+      }
+      &.l12.r12 {
+        border-right: 0;
+      }
     }
-    &.l12.r12{
-      border-right: 0;
+    .content-history-table-inner .slickgrid .slick-cell {
+      width: 219px;
+    }
+    .report-downloads-table .slickgrid .slick-cell {
+      width: 100%;
     }
   }
   .slick-header-columns {
@@ -2695,9 +2703,6 @@ h1, h2, h3, h4, h5, h6{
   }
   .content-history-table-inner .ui-state-default.slick-header-column {
     width: 219px !important;
-  }
-  .instructor-dashboard-content-2 .content-history-table-inner .slickgrid .slick-cell {
-    width: 219px;
   }
 }
 
