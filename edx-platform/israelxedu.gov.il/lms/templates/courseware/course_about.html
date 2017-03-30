@@ -30,7 +30,7 @@ from openedx.core.djangolib.markup import Text, HTML
   <script type="text/javascript">
   (function() {
 
-    $(".instructor-image").leanModal({closeButton: ".modal_close", top: '10%'});
+    $(".instructor-image, .instructor-label").leanModal({closeButton: ".modal_close", top: '10%'});
 
     // Create MutationObserver which prevents the body of
     // the page from scrolling when a modal window is displayed
@@ -293,7 +293,7 @@ from openedx.core.djangolib.markup import Text, HTML
             <div class="thumbnail">
                 <a href="#instructor-details-${index}" class="instructor-image"><img src="${static.url(instructor['image'])}" alt="${instructor['name']}"></a>
             </div>
-            <p>${instructor['name']} <span>${instructor['title']}</span></p>
+            <p><a href="#instructor-details-${index}" class="instructor-label">${instructor['name']}</a> <span>${instructor['title']}</span></p>
             <div class="modal modal-custom" id="instructor-details-${index}">
                <div class="btn-close modal_close"><i class="fa fa-close"></i></div>
                <div class="modal-body">
