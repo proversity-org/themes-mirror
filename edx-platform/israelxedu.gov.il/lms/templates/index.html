@@ -18,6 +18,7 @@ from django.core.urlresolvers import reverse
     }
   })
 </script>
+<%include file="about_site.html" />
 <script type="text/javascript" src="${static.url('js/slick.min.js')}"></script>
 </%block>
 
@@ -56,6 +57,10 @@ from django.core.urlresolvers import reverse
   </header>
 
   <%include file="${courses_list}" />
+
+  <section class="about-section">
+    <div class="about-container"></div>
+  </section>
 </section>
 
 % if show_homepage_promo_video:
