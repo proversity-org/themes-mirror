@@ -69,7 +69,7 @@ $(document).ready(function () {
     });
 
     // Initialize instructor bio modals
-    $(".instructor-image").leanModal({closeButton: ".modal_close", top: '10%'});
+    $(".instructor-image, .instructor-label").leanModal({closeButton: ".modal_close", top: '10%'});
 
     // Create MutationObserver which prevents the body of
     // the page from scrolling when a modal window is displayed
@@ -100,8 +100,10 @@ $(document).ready(function () {
     $("ul.faq-links-list li.item").click(function () {
         if ($(this).find(".answer").hasClass('hidden')) {
             $(this).find(".answer").removeClass("hidden");
+            $(this).addClass('expanded');
         } else {
             $(this).find(".answer").addClass("hidden");
+            $(this).removeClass('expanded');
         }
     });
 
@@ -142,6 +144,7 @@ $(document).ready(function () {
     $("#accordion-group").accordion({
         header: "> .accordion-item > .accordion-head",
         collapsible: true,
+        active: false,
         heightStyle: "content"
     });
 });

@@ -14,9 +14,10 @@ img{
   max-width: 100%;
 }
 a{
+  text-decoration: none;
   &:hover{
-    text-decoration: none;
     opacity: 0.8;
+    text-decoration: none;
   }
   &:focus{
     text-decoration: none;
@@ -423,8 +424,10 @@ header.header-main {
       width: 100%;
       text-align: center;
       a{
+
         line-height: normal;
         color: $x-dark;
+        text-decoration: none;
       }
       &.user-account{
         margin-right: 1rem;
@@ -1444,6 +1447,8 @@ header.header-main {
     .container {
         min-width: auto;
         border: none;
+        max-width: 73.125rem;
+        padding: 20px 1rem;
     }
 
     > .grid-manual {
@@ -1492,19 +1497,16 @@ header.header-main {
     }
 
     .instructors-title {
-        color: #126f9a;
+        color: $blue-dark;
         font-family: $sans-serif;
         text-transform: none;
         letter-spacing: 0px;
         @media (min-width: $tablet) {
             margin-top: 5px;
-            font-size: 18px;
+            font-size: 18px !important;
         }
         @media (min-width: $desktop) {
-            font-size: 22px;
-        }
-        @media (min-width: $desktop-xl) {
-            font-size: 26px;
+            font-size: 22px !important;
         }
     }
 
@@ -1513,7 +1515,7 @@ header.header-main {
 
         .profile-item {
             @extend .tbl-view;
-            margin-bottom: 30px;
+            margin-bottom: 25px;
 
             .avatar,
             .details {
@@ -1528,16 +1530,11 @@ header.header-main {
                 }
 
                 .img-holder {
-                    width: 54px;
-                    height: 54px;
+                    width: 70px;
+                    height: 70px;
                     border-radius: 50%;
-                    border: 2px solid $blue;
+                    border: 2px solid $blue-dark;
                     overflow: hidden;
-                    @media (min-width: $tablet) {
-                        width: 60px;
-                        height: 60px;
-                    }
-
                     img {
                         max-width: 100%;
                     }
@@ -1548,13 +1545,16 @@ header.header-main {
                 padding-left: 15px;
 
                 .name {
-                    color: $blue;
-                    font-weight: 600;
-                    font-size: .9em;
-                    margin-bottom: 5px;
+                    color: $blue-dark;
+                    font-size: 1em;
+                    margin-bottom: 0;
+                    a{
+                      font-weight: 600;
+                      text-decoration: underline;
+                    }
                 }
                 .dept {
-                    font-size: .8em;
+                    font-size: 1em;
                     line-height: 1.5;
                 }
             }
@@ -1567,7 +1567,7 @@ header.header-main {
 }
 
 .btn-start {
-  padding: 0.8rem 1.875rem;
+  padding: 0.75rem 2rem;
 }
 
 .vertical-icon-list {
@@ -1722,6 +1722,12 @@ header.header-main {
                 }
             }
         }
+      img{
+        max-width: 75px;
+        height: auto;
+        margin-left: 6px;
+        width: 100%;
+      }
     }
 
     &.visible-mobile {
@@ -1866,6 +1872,8 @@ header.header-main {
     background: white;
     padding: 10px;
     margin-bottom: 30px;
+    border: 1px solid $base;
+    vertical-align: top;
     @include box-shadow(0, 1px, 5px, rgba(0, 0, 0, 0.4));
     border-radius: 4px;
     @media (min-width: $tablet) {
@@ -1877,9 +1885,12 @@ header.header-main {
 
     .title {
         color: $blue-dark;
-        margin-bottom: 20px;
-        font-size: 1.1em;
+        margin-bottom: 10px;
+        font-size: 18px;
         text-decoration: underline;
+        a{
+          color: #005686;
+        }
         @media (min-width: $tablet) {
             font-size: 1.5em;
         }
@@ -1896,11 +1907,8 @@ header.header-main {
             > span {
                 display: inline-block;
                 text-decoration: none;
-                font-size: 0.85rem;
-                @media (min-width: $tablet) {
-                    font-size: 1.15rem;
-                }
-
+                font-size: 1rem !important;
+                color: $gray;
                 &:first-child {
                     border-right: 1px solid #4a4a4a;
                     padding-right: 6px;
@@ -1918,6 +1926,7 @@ header.header-main {
         margin-bottom: 0;
         font-weight: normal;
         font-size: 1rem;
+        color: $gray;
     }
 
     &:last-child {
@@ -1952,22 +1961,21 @@ header.header-main {
 
     > .hd {
         color: $blue-dark;
-        font-size: 20px;
         padding: 0 1.25rem !important;
         margin-bottom: 15px;
         @media (min-width: $tablet) {
-            padding: 0;
-            font-size: 24px;
-            margin-bottom: 20px;
+          padding: 0;
+          font-size: 18px !important;
         }
         @media (min-width: $desktop) {
-            font-size: 30px;
+            font-size: 22px !important;
         }
     }
 
     .course-card {
         margin-bottom: 20px;
-        min-height: 200px;
+        min-height: 283px;
+        position: relative;
         @media (max-width: $mobile) {
             min-height: 300px;
             margin-left: 5px;
@@ -2053,12 +2061,8 @@ h1, h2, h3, h4, h5, h6{
         line-height: 333px;
         margin: auto;
         display: block;
-        width: 100px;
-        height: 100px;
-        @media (min-width: $desktop-xl) {
-            width: 150px;
-            height: 150px;
-        }
+        width: 80px;
+        height: 80px;
     }
 
     .org-logo {
@@ -2143,15 +2147,33 @@ h1, h2, h3, h4, h5, h6{
             display: block;
         }
     }
+  .grid-manual{
+    .btn-start{
+      min-width: 300px;
+      padding: 0.75rem 2rem;
+      font-size: 1.25rem;
+      text-decoration: none;
+      text-align: center;
+      font-weight: 600;
+      border-radius: 0;
+      background: #008100;
+      background: -moz-linear-gradient(top, #008100 0%, #0a570a 100%);
+      background: -webkit-linear-gradient(top, #008100 0%,#0a570a 100%);
+      background: linear-gradient(to bottom, #008100 0%,#0a570a 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#008100', endColorstr='#0a570a',GradientType=0 );
+      border: 0;
+    }
+  }
 }
 .pagination {
-    margin: 10px 0 40px;
+    margin: 10px 0 50px;
     width: 100%;
     display: block;
     .pages{
         width: calc(100% - 120px);
         text-align: right;
         display: inline-block;
+        font-size: 14px;
     }
     .controls{
         text-align: center;
@@ -2164,12 +2186,12 @@ h1, h2, h3, h4, h5, h6{
                 border-right: 1px solid $light-gray2;
             }
             .fa{
-                font-size: 1.4rem;
+                font-size: 1.75rem;
                 color: $border-color;
             }
             &.active{
                 .fa{
-                    color: $gray-d2;
+                    color: $gray;
                 }
             }
         }
@@ -2189,7 +2211,7 @@ h1, h2, h3, h4, h5, h6{
     border: 1px solid #e3e3e3;
     border-radius: 6px;
     @media (min-width: $tablet) {
-        border: 2px solid #126f9a;
+        border: 2px solid $blue-light;
         border-radius: 0;
         padding: 5px 15px;
     }
@@ -2207,12 +2229,16 @@ h1, h2, h3, h4, h5, h6{
             padding: 15px 0 !important;
         }
         @media (min-width: $desktop) {
-            font-size: 1.1em;
-            padding: 15px !important;
+          font-size: 1em;
+          padding: 15px !important;
         }
-        span,
-        span + a {
-            font-size: 1.024em;
+        span {
+            font-size: 1em !important;
+            + a{
+              font-weight: 600;
+              font-size: 1em !important;
+              text-decoration: underline;
+            }
         }
 
         > span {
@@ -2229,8 +2255,9 @@ h1, h2, h3, h4, h5, h6{
 
             .fa {
                 display: none;
-                margin-right: 25px;
-                font-size: 1.5em;
+                margin-right: 30px;
+                margin-left: 20px;
+                font-size: 1.4em !important;
                 @media (min-width: $desktop) {
                     display: inline-block;
                 }
@@ -2313,6 +2340,11 @@ h1, h2, h3, h4, h5, h6{
                 color: $black;
             }
         }
+      &.expanded {
+         a:before {
+           content: "\f107";
+         }
+      }
     }
 
 }
@@ -2596,7 +2628,15 @@ h1, h2, h3, h4, h5, h6{
   .rtl .hero.hero-video .tint-dark .grid-container .row .description{
     padding-right: 1.04167%;
   }
-
+  .course-card{
+    .title{
+      small{
+        > span{
+          font-size: 0.8rem !important;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 64em){ /* 980px */
@@ -2617,6 +2657,15 @@ h1, h2, h3, h4, h5, h6{
   .footer-main {
     .footer-logo {
       text-align: left;
+    }
+  }
+  .course-card{
+    .title{
+      small{
+        > span{
+          font-size: 1rem !important;
+        }
+      }
     }
   }
 }
@@ -2709,6 +2758,59 @@ h1, h2, h3, h4, h5, h6{
 @media(min-width: 768px) {
   header.header-main .list-inline li.user-account ul:before {
     right: 0.4rem;
+  }
+  .course-card{
+    display: inline-block;
+    margin: 0 calc(0.5 * 2.6rem) 30px calc(0.5 * 1rem) !important;
+    width: calc(50% - 22px);
+    verticle-align: top;
+    position: absolute;
+    height: 283px;
+    max-height: 283px;
+    overflow: hidden;
+    &:nth-child(even){
+      margin-right: 0 !important;
+    }
+    .title{
+      font-size: 1.15rem;
+      a{
+         height: auto;
+         max-height: 50px;
+         overflow: hidden;
+         display: block;
+         color: #005686;
+         font-weight:600;
+         text-decoration: underline;
+      }
+      small{
+        margin-top: 10px;
+        > span{
+          font-size: 0.9rem;
+        }
+      }
+    }
+    p{
+      margin-bottom: 30px;
+      min-height: 75px;
+      max-height: 75px;
+      overflow: hidden;
+      position: absolute;
+      bottom: 66px;
+      left: 20px;
+      right: 20px;
+    }
+    .btn-enroll{
+      display: inline-block;
+      background-color: $green !important;
+      min-width: 220px;
+      padding: 10px 30px;
+      font-size: 16px !important;
+      font-weight: 600 !important;
+      text-decoration: none;
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+    }
   }
 }
 

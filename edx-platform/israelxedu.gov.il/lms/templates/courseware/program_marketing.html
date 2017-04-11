@@ -22,8 +22,6 @@ job_outlook_items = program['job_outlook_items']
 weeks_to_complete = program['weeks_to_complete']
 full_program_price_format = '{0:.0f}' if program['full_program_price'].is_integer() else '{0:.2f}'
 full_program_price = full_program_price_format.format(program['full_program_price'])
-avg_price_per_course_format = '{0:.0f}' if program['avg_price_per_course'].is_integer() else '{0:.2f}'
-avg_price_per_course = avg_price_per_course_format.format(program['avg_price_per_course'])
 endorsement = program['individual_endorsements'][0] if program['individual_endorsements'] else {}
 endorsement_quote = endorsement.get('quote', '')
 endorser = endorsement.get('endorser', {})
@@ -68,7 +66,7 @@ description_max_length = 250
                     <h1 class="banner-title">${title}</h1>
                     <p class="banner-description">${subtitle}</p>
                     <a href="#courses" class="btn-brand btn-large hidden-sm btn-start">
-                        Start the ${program_type} Program
+                        Start Learning
                     </a>
                 </div>
                 <div class="col col-12 md-col-4 lg-col-3" id="course-trailer">
@@ -116,7 +114,7 @@ description_max_length = 250
                             <span class="fa fa-tag fa-lg" aria-hidden="true"></span>
                             Price (USD)
                         </span>
-                        <span>$${avg_price_per_course} per course, <br class="visible-sm"/> $${full_program_price} for entire program</span>
+                        <span>$${full_program_price} for entire program</span>
                     </li>
                 </ul>
                 <div id="accordion-group">
@@ -165,7 +163,7 @@ description_max_length = 250
                                         </div>
                                     </div>
                                     <div class="details">
-                                        <div class="name">${instructor.get('name')}</div>
+                                        <div class="name"><a href="#instructor-details-mobile-${index}" class="instructor-label">${instructor.get('name')}</a></div>
                                         <div class="dept">${instructor.get('organization')}</div>
                                     </div>
 
@@ -250,7 +248,7 @@ description_max_length = 250
                             </div>
                         </div>
                         <div class="details">
-                            <div class="name">${instructor.get('name')}</div>
+                            <div class="name"><a href="#instructor-details-${index}" class="instructor-label">${instructor.get('name')}</a></div>
                             <div class="dept">${instructor.get('organization')}</div>
                         </div>
 
@@ -285,9 +283,8 @@ description_max_length = 250
                         <div class="pages"><span class="pagination-start"></span>-<span class="pagination-end"></span>
                             of <span class="instructor-size">${len(instructors)}</span></div>
                         <div class="controls">
-                            <a href="#" id="pagination-next" class="active"><span
-                                    class="fa fa-chevron-down active"></span></a>
                             <a href="#" id="pagination-previous"><span class="fa fa-chevron-up"></span></a>
+                            <a href="#" id="pagination-next" class="active"><span class="fa fa-chevron-down active"></span></a>
                         </div>
                     </div>
                 </div>
@@ -322,8 +319,8 @@ description_max_length = 250
             % for course in courses:
             % if course.get('course_runs'):
             <div class="course-card">
-                <div class="tbl-view">
-                    <div class="tbl-col col-full-sm">
+                <div class="course-content">
+                    <div class="col-full-sm">
                         <h4 class="hd title">
                             <a href="/courses/${course['course_runs'][0]['key']}/about"> ${course['title']}</a>
                             <small>
@@ -355,7 +352,7 @@ description_max_length = 250
                             % endif
                         </p>
                     </div>
-                    <div class="tbl-col col-full-sm">
+                    <div class="col-full-sm">
                         <%include file="_enroll_button_program.html" args="course=course" />
                     </div>
                 </div>
