@@ -1868,7 +1868,7 @@ header.header-main {
     }
 }
 
-.course-card {
+.courses-in-program .course-card {
     background: white;
     padding: 10px;
     margin-bottom: 30px;
@@ -2628,7 +2628,7 @@ h1, h2, h3, h4, h5, h6{
   .rtl .hero.hero-video .tint-dark .grid-container .row .description{
     padding-right: 1.04167%;
   }
-  .course-card{
+  .courses-in-program .course-card{
     .title{
       small{
         > span{
@@ -2659,7 +2659,7 @@ h1, h2, h3, h4, h5, h6{
       text-align: left;
     }
   }
-  .course-card{
+  .courses-in-program .course-card{
     .title{
       small{
         > span{
@@ -2759,7 +2759,7 @@ h1, h2, h3, h4, h5, h6{
   header.header-main .list-inline li.user-account ul:before {
     right: 0.4rem;
   }
-  .course-card{
+  .courses-in-program .course-card{
     display: inline-block;
     margin: 0 calc(0.5 * 2.6rem) 30px calc(0.5 * 1rem) !important;
     width: calc(50% - 22px);
