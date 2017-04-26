@@ -1,54 +1,55 @@
 ## mako
 <%namespace name='static' file='static_content.html'/>
+<%! from django.utils.translation import ugettext as _ %>
 
 <script type="text/template" id="about-content">
   <div class="grid-manual">
     <div class="row">
       <div class="col col-12 text-center">
-        <h2 class="he">למידה דיגיטלית מותאמת אישית לכל אחד ולכל מטרה.</h2>
-        <h2 class="ar">تعليم طريق الشبكة (تعليم رقميّ) ملائم بشكل شخصيّ لكل شخص ولكل هدف.</h2>
-        <h2 class="en">Personalized Digital Learning for Anyone and for Any Purpose.</h2>
+        <h2 class="he">למידה דיגיטלית מותאמת אישית לכל אחד ולכל מטרה</h2>
+        <h2 class="ar">تعليم طريق الشبكة (تعليم رقميّ) ملائم بشكل شخصيّ لكل شخص ولكل هدف</h2>
+        <h2 class="en">Personalized Digital Learning for Anyone and for Any Purpose</h2>
       </div>
     </div>
 
     <div class="row about-list text-center">
       <div class="col col-3 about-list-item">
         <div class="about-icon">
-          <img src="${static.url('images/ProofPointImage1.png')}" alt="Academic Education " />
-          <p class="he"><span>השכלה אקדמית</span>מגוון קורסים מהאוניברסיטאות המובילות בארץ, מכל מקום ובכל זמן.</p>
-          <p class="ar"><span>الثقافة العالية</span>مجموعة من الدورات من قبل الجامعات الرائدة في البلاد، متوفرة في كل وقت وفي كل زمان.</p>
-          <p class="en"><span>Academic Education</span>A variety of courses by top Israeli institutes, available anytime, anywhere.</p>
+          <img src="${static.url('images/ProofPointImage1.png')}" alt=${_("Academic Education")} />
+          <p class="he"><span>השכלה אקדמית</span>מגוון קורסים מהאוניברסיטאות המובילות בארץ, מכל מקום ובכל זמן</p>
+          <p class="ar"><span>الثقافة العالية</span>مجموعة من الدورات من قبل الجامعات الرائدة في البلاد، متوفرة في كل وقت وفي كل زمان</p>
+          <p class="en"><span>Academic Education</span>A variety of courses by top Israeli institutes, available anytime, anywhere</p>
         </div>
       </div>
       <div class="col col-3 about-list-item">
         <div class="about-icon">
-          <img src="${static.url('images/ProofPointImage2.png')}" alt="High School Education" />
-          <p class="he"><span>השכלה תיכונית</span>קורסים מקוונים לתלמידי תיכון, מוגשים על ידי המורים הטובים ביותר. X ללמוד לבחינות הבגרות ברמה ובקצב המתאימים לך, בכלים המתקדמים ביותר</p>
+          <img src="${static.url('images/ProofPointImage2.png')}" alt=${_("High School Education")} />
+          <p class="he"><span>השכלה תיכונית</span>קורסים מקוונים לתלמידי תיכון, מוגשים על ידי המורים הטובים ביותר. ללמוד לבחינות הבגרות ברמה ובקצב המתאימים לך, בכלים המתקדמים ביותר</p>
           <p class="ar"><span>المرحلة الثانوية</span>دورات رقميّة لطلاب المرحلة الثانوية، مقدمة من قبل افضل المعلمين. دراسة لامتحانات البجروت بمساعدة الأدوات والتقنيات المتقدمة. ذلك حسب المستوى وحسب النمط الشخصي الملائم لكل طالب واسلوبه الشخصيّ</p>
-          <p class="en"><span>High School Education</span>Online courses for high school students brought to you by the best teachers.</p>
+          <p class="en"><span>High School Education</span>Online courses for high school students brought to you by the best teachers</p>
         </div>
       </div>
       <div class="col col-3 about-list-item">
         <div class="about-icon">
-          <img src="${static.url('images/ProofPointImage3.png')}" alt="Employment" />
-          <p class="he"><span>תעסוקה וכישורי חיים</span>קורסים מקצועיים המותאמים לשוק העבודה הישראלי, שיעזרו לכם להקפיץ את הקריירה קדימה.</p>
-          <p class="ar"><span>سوق العمل ومهارات شخصية</span>دورات مهنية مبنية بتوافق تام مع سوق العمل الاسرائيلي، من خلالها تستطيعون تقديم المهنة الشخصية إلى خطوط جديدة.</p>
-          <p class="en"><span>Employment and Life Skills</span>Professional courses designed to fit the Israeli job market.</p>
+          <img src="${static.url('images/ProofPointImage3.png')}" alt=${_("Employment")} />
+          <p class="he"><span>תעסוקה וכישורי חיים</span>קורסים מקצועיים המותאמים לשוק העבודה הישראלי, שיעזרו לכם להקפיץ את הקריירה קדימה</p>
+          <p class="ar"><span>سوق العمل ومهارات شخصية</span>دورات مهنية مبنية بتوافق تام مع سوق العمل الاسرائيلي، من خلالها تستطيعون تقديم المهنة الشخصية إلى خطوط جديدة</p>
+          <p class="en"><span>Employment and Life Skills</span>Professional courses designed to fit the Israeli job market</p>
         </div>
       </div>
        <div class="col col-3 about-list-item">
         <div class="about-icon">
-          <img src="${static.url('images/ProofPointImage4.png')}" alt="Government Courses" />
+          <img src="${static.url('images/ProofPointImage4.png')}" alt=${_("Government Courses")} />
           <p class="he"><span>קורסים והדרכות ממשלתיות</span>הכשרות והשתלמויות עבור עובדי ציבור במשרדי הממשלה וברשויות המקומיות</p>
-          <p class="ar"><span>دورات ومحاضرات حكومية</span>دورات تأهيل خاصة لموظفي شتى المكاتب الحكومية.</p>
-          <p class="en"><span>Government Courses</span>Vocational training programs for government employees.</p>
+          <p class="ar"><span>دورات ومحاضرات حكومية</span>دورات تأهيل خاصة لموظفي شتى المكاتب الحكومية</p>
+          <p class="en"><span>Government Courses</span>Vocational training programs for government employees</p>
         </div>
       </div>
     </div>
 
     <div class="row">
       <div class="col col-12 text-center">
-        <a href="/about" class="btn-neutral">More about this site</a>
+        <a href="/about" class="btn-neutral">${_("More about this site")}</a>
       </div>
     </div>
   </div>
