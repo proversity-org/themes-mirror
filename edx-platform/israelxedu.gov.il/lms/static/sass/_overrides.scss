@@ -369,14 +369,14 @@ header.header-main {
         z-index: 0;
         top: 4px;
         left: 2px;
-        color: #8d1221;
+        color: $brand-color;
       }
 
       .language-selection .fa-angle-down {
         position: absolute;
         right: 5px;
         top: 4px;
-        color: #8d1221;
+        color: $brand-color;
       }
     }
   }
