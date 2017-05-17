@@ -1353,6 +1353,11 @@ header.header-main {
   }
 }
 
+.courseware .course-material{
+  max-width: 1180px;
+  margin: auto;
+}
+
 .discussion {
   #content {
     padding-bottom: 60px;
@@ -1360,6 +1365,10 @@ header.header-main {
     .container{
       border:1px solid #d9d9d9;
     }
+  }
+  .course-material {
+    max-width: 1180px;
+    margin: auto;
   }
 }
 
