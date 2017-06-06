@@ -36,9 +36,11 @@
 
             <div class="row program-list">
               % for program in programs_list:
-               <div class="col col-12 sm-col-12 md-col-4 lg-col-4">
-                   <%include file="../program.html" args="program=program" />
-               </div>
+                % if not program.get('hidden', False):
+                   <div class="col col-12 sm-col-12 md-col-4 lg-col-4">
+                       <%include file="../program.html" args="program=program" />
+                   </div>
+                % endif
               % endfor
            </div>
 
