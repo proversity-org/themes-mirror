@@ -12,6 +12,10 @@ from django.core.urlresolvers import reverse
 
 <%block name="js_extra">
 <script type="text/javascript">
+  $(document).ready(function() {
+    pageTitle = document.title;
+    document.title = pageTitle.substring(pageTitle.indexOf('|')+2, pageTitle.length);
+  });
   $(window).load(function () {
     if (getParameterByName('next')) {
       $('#login').trigger("click");
